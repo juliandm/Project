@@ -1,78 +1,41 @@
-﻿<!DOCTYPE html>
-<!--
-Copyright 2012 Mozilla Foundation
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<body tabindex="1" class="loadingInProgress">
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+     <div className="top-bar">
+      <div className="top-bar-left">
+        <ul className="menu">
+          <li className="menu-text">
+            React Timer App
+          </li>
+          <li>
+            <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
+          </li>
+          <li>
+            <Link to="/countdown" activeClassName="active-link">Countdown</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="top-bar-right">
+        <ul className="menu">
+          <li className="menu-text">
+            Created by <a href="http://www.google.de" target="_blank">Julian</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
 
-Adobe CMap resources are covered by their own copyright but the same license:
-
-    Copyright 1990-2015 Adobe Systems Incorporated.
-
-See https://github.com/adobe-type-tools/cmap-resources
--->
-<html dir="ltr" mozdisallowselectionprint moznomarginboxes>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<!--#if GENERIC || CHROME-->
-    <meta name="google" content="notranslate">
-<!--#endif-->
-<!--#if GENERIC-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--#endif-->
-    <title>PDF.js viewer</title>
-
-<!--#if FIREFOX || MOZCENTRAL-->
-<!--#include viewer-snippet-firefox-extension.html-->
-<!--#endif-->
-<!--#if CHROME-->
-<!--#include viewer-snippet-chrome-extension.html-->
-<!--#endif-->
-
-    <link rel="stylesheet" href="viewer.css">
-<!--#if !PRODUCTION-->
-    <link rel="resource" type="application/l10n" href="locale/locale.properties">
-<!--#endif-->
-
-<!--#if !(FIREFOX || MOZCENTRAL || CHROME || MINIFIED)-->
-    <script src="compatibility.js"></script>
-<!--#endif-->
-
-<!--#if !PRODUCTION-->
-    <script src="../external/webL10n/l10n.js"></script>
-<!--#endif-->
-
-<!--#if !PRODUCTION-->
-    <script src="../node_modules/requirejs/require.js"></script>
-<!--#endif-->
-
-<!--#if (GENERIC && !MINIFIED) -->
-<!--#include viewer-snippet.html-->
-<!--#endif-->
-
-<!--#if !PRODUCTION-->
-    <script src="default_preferences.js"></script>
-<!--#endif-->
-
-<!--#if !MINIFIED -->
-    <script src="viewer.js"></script>
-<!--#else-->
-<!--#include viewer-snippet-minified.html-->
-<!--#endif-->
-
-  </head>
-
-  <body tabindex="1" class="loadingInProgress">
+     <!--New Stuff -->
     <div id="outerContainer">
 
       <div id="sidebarContainer">
@@ -258,8 +221,8 @@ See https://github.com/adobe-type-tools/cmap-resources
                 </div>
               </div>
             </div>
-          <!--</div>-->
-        </div>
+          </div>
+        <!--</div>-->
 
         <menu type="context" id="viewerContextMenu">
           <menuitem id="contextFirstPage" label="First Page"
@@ -381,4 +344,5 @@ See https://github.com/adobe-type-tools/cmap-resources
     </div> <!-- outerContainer -->
     <div id="printContainer"></div>
   </body>
+</body>
 </html>

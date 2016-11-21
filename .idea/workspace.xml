@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189be12c-b877-4c35-ad14-fee51f7e5e27" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/app.jsx" afterPath="$PROJECT_DIR$/web/app/app.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/components/Editor.jsx" afterPath="$PROJECT_DIR$/web/app/components/Editor.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/components/Entrance.jsx" afterPath="$PROJECT_DIR$/web/app/components/Entrance.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/public/bundle.js" afterPath="$PROJECT_DIR$/web/app/public/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/public/bundle.js.map" afterPath="$PROJECT_DIR$/web/app/public/bundle.js.map" />
     </list>
     <ignored path="pdf.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,18 +33,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="viewer.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/viewer.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,11 +53,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Editor.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/app/components/Editor.jsx">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Editor.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/components/Editor.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -170,8 +165,9 @@
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/web/viewer.html" />
         <option value="$PROJECT_DIR$/web/.gitignore" />
-        <option value="$PROJECT_DIR$/web/app/components/Editor.jsx" />
         <option value="$PROJECT_DIR$/web/app/app.jsx" />
+        <option value="$PROJECT_DIR$/web/app/components/Editor.jsx" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -554,9 +550,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="52" width="1301" height="716" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25258964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25258964" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -594,13 +590,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/pdf_attachment_viewer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/toggleColor.js" />
     <entry file="file://$PROJECT_DIR$/web/pdf_sidebar.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -881,14 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/viewer1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -941,8 +922,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/components/Editor.jsx">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
         </state>
       </provider>

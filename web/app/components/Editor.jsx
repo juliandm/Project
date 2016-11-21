@@ -1,6 +1,6 @@
 import React from "react";
 
-class Editor extends React.Component {
+export class Editor extends React.Component {
   render () {
     return (
       <div>
@@ -9,3 +9,5 @@ class Editor extends React.Component {
     )
   }
 }
+
+export default Editor;

@@ -1,12 +1,10 @@
 import React from "react"
-import About from './modules/About'
-import Repos from './modules/Repos'
+import Editor from './components/Editor'
+import Entrance from './components/Entrance'
 
 render((
   <Router history={hashHistory}>
-    <Route path="/" component={App}/>
-    {/* add the routes here */}
-    <Route path="/repos" component={Repos}/>
-    <Route path="/about" component={About}/>
+    <Route path="/" component={Entrance}/>
+    <Route path="/Editor" component={Editor}/>
   </Router>
 ), document.getElementById('app'))

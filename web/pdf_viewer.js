@@ -46,7 +46,7 @@ var CSS_UNITS = uiUtils.CSS_UNITS;
 var DEFAULT_SCALE = uiUtils.DEFAULT_SCALE;
 var DEFAULT_SCALE_VALUE = uiUtils.DEFAULT_SCALE_VALUE;
 var scrollIntoView = uiUtils.scrollIntoView;
-// var watchScroll = uiUtils.watchScroll;
+var watchScroll = uiUtils.watchScroll;
 var getVisibleElements = uiUtils.getVisibleElements;
 var PDFPageView = pdfPageView.PDFPageView;
 var RenderingStates = pdfRenderingQueue.RenderingStates;
@@ -143,7 +143,7 @@ var PDFViewer = (function pdfViewer() {
       this.renderingQueue = options.renderingQueue;
     }
 
-    // this.scroll = watchScroll(this.container, this._scrollUpdate.bind(this));
+    this.scroll = watchScroll(this.container, this._scrollUpdate.bind(this));
     this.presentationModeState = PresentationModeState.UNKNOWN;
     this._resetView();
 

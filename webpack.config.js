@@ -17,14 +17,16 @@ module.exports = {
     })
   ],
   output: {
-    path: "./web/app/public",
-    filename: "bundle.js"
+    path: __dirname,
+    filename: "./web/app/public/bundle.js"
   },
   resolve: {
     root: __dirname,
     modulesDirectories: [
       "node_modules",
-      "./web/app/components"
+      "./web/app/components",
+      "./web/app/public",
+      "./web/app/styles"
     ],
     alias: {
       applicationStyles: "web/app/styles/app.scss",
@@ -43,6 +45,10 @@ module.exports = {
         },
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
       }
     ]
   },

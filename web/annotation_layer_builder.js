@@ -30,7 +30,7 @@
 }(this, function (exports, uiUtils, pdfLinkService, pdfjsLib) {
 
 var mozL10n = uiUtils.mozL10n;
-var SimpleLinkService = pdfLinkService.SimpleLinkService;
+// var SimpleLinkService = pdfLinkService.SimpleLinkService;
 
 /**
  * @typedef {Object} AnnotationLayerBuilderOptions
@@ -137,7 +137,7 @@ DefaultAnnotationLayerFactory.prototype = {
       pageDiv: pageDiv,
       pdfPage: pdfPage,
       renderInteractiveForms: renderInteractiveForms,
-      linkService: new SimpleLinkService(),
+      // linkService: new SimpleLinkService(),
     });
   }
 };

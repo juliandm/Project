@@ -160,35 +160,35 @@ function scrollIntoView(element, spot, skipOverflowHiddenElements) {
  * Helper function to start monitoring the scroll event and converting them into
  * PDF.js friendly one: with scroll debounce and scroll direction.
  */
-function watchScroll(viewAreaElement, callback) {
-  var debounceScroll = function debounceScroll(evt) {
-    if (rAF) {
-      return;
-    }
-    // schedule an invocation of scroll for next animation frame.
-    rAF = window.requestAnimationFrame(function viewAreaElementScrolled() {
-      rAF = null;
+// function watchScroll(viewAreaElement, callback) {
+//   var debounceScroll = function debounceScroll(evt) {
+//     if (rAF) {
+//       return;
+//     }
+//     // schedule an invocation of scroll for next animation frame.
+//     rAF = window.requestAnimationFrame(function viewAreaElementScrolled() {
+//       rAF = null;
+//
+//       var currentY = viewAreaElement.scrollTop;
+//       var lastY = state.lastY;
+//       if (currentY !== lastY) {
+//         state.down = currentY > lastY;
+//       }
+//       state.lastY = currentY;
+//       callback(state);
+//     });
+//   };
 
-      var currentY = viewAreaElement.scrollTop;
-      var lastY = state.lastY;
-      if (currentY !== lastY) {
-        state.down = currentY > lastY;
-      }
-      state.lastY = currentY;
-      callback(state);
-    });
-  };
+  // var state = {
+  //   down: true,
+  //   lastY: viewAreaElement.scrollTop,
+  //   _eventHandler: debounceScroll
+  // };
 
-  var state = {
-    down: true,
-    lastY: viewAreaElement.scrollTop,
-    _eventHandler: debounceScroll
-  };
-
-  var rAF = null;
-  viewAreaElement.addEventListener('scroll', debounceScroll, true);
-  return state;
-}
+//   var rAF = null;
+//   viewAreaElement.addEventListener('scroll', debounceScroll, true);
+//   return state;
+// }
 
 /**
  * Helper function to parse query string (e.g. ?param1=value&parm2=...).
@@ -551,7 +551,7 @@ exports.roundToDivide = roundToDivide;
 exports.approximateFraction = approximateFraction;
 exports.getOutputScale = getOutputScale;
 exports.scrollIntoView = scrollIntoView;
-exports.watchScroll = watchScroll;
+// exports.watchScroll = watchScroll;
 exports.binarySearchFirstItem = binarySearchFirstItem;
 exports.normalizeWheelEventDelta = normalizeWheelEventDelta;
 }));

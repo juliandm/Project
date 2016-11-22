@@ -46,14 +46,14 @@ var CSS_UNITS = uiUtils.CSS_UNITS;
 var DEFAULT_SCALE = uiUtils.DEFAULT_SCALE;
 var DEFAULT_SCALE_VALUE = uiUtils.DEFAULT_SCALE_VALUE;
 var scrollIntoView = uiUtils.scrollIntoView;
-var watchScroll = uiUtils.watchScroll;
+// var watchScroll = uiUtils.watchScroll;
 var getVisibleElements = uiUtils.getVisibleElements;
 var PDFPageView = pdfPageView.PDFPageView;
 var RenderingStates = pdfRenderingQueue.RenderingStates;
 var PDFRenderingQueue = pdfRenderingQueue.PDFRenderingQueue;
 var TextLayerBuilder = textLayerBuilder.TextLayerBuilder;
 var AnnotationLayerBuilder = annotationLayerBuilder.AnnotationLayerBuilder;
-var SimpleLinkService = pdfLinkService.SimpleLinkService;
+// var SimpleLinkService = pdfLinkService.SimpleLinkService;
 
 var PresentationModeState = {
   UNKNOWN: 0,
@@ -128,7 +128,7 @@ var PDFViewer = (function pdfViewer() {
     this.container = options.container;
     this.viewer = options.viewer || options.container.firstElementChild;
     this.eventBus = options.eventBus || domEvents.getGlobalEventBus();
-    this.linkService = options.linkService || new SimpleLinkService();
+    // this.linkService = options.linkService || new SimpleLinkService();
     this.downloadManager = options.downloadManager || null;
     this.removePageBorders = options.removePageBorders || false;
     this.enhanceTextSelection = options.enhanceTextSelection || false;
@@ -143,7 +143,7 @@ var PDFViewer = (function pdfViewer() {
       this.renderingQueue = options.renderingQueue;
     }
 
-    this.scroll = watchScroll(this.container, this._scrollUpdate.bind(this));
+    // this.scroll = watchScroll(this.container, this._scrollUpdate.bind(this));
     this.presentationModeState = PresentationModeState.UNKNOWN;
     this._resetView();
 

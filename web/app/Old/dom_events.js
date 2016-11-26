@@ -95,11 +95,11 @@
       window.dispatchEvent(event);
     });
     eventBus.on('attachmentsloaded', function (e) {
-      var event = document.createEvent('CustomEvent');
-      event.initCustomEvent('attachmentsloaded', true, true, {
-        attachmentsCount: e.attachmentsCount
-      });
-      e.source.container.dispatchEvent(event);
+      // var event = document.createEvent('CustomEvent');
+      // event.initCustomEvent('attachmentsloaded', true, true, {
+      //   attachmentsCount: e.attachmentsCount
+      // });
+      // e.source.container.dispatchEvent(event);
     });
     eventBus.on('sidebarviewchanged', function (e) {
       var event = document.createEvent('CustomEvent');
@@ -131,11 +131,11 @@
       window.dispatchEvent(event);
     });
     eventBus.on('outlineloaded', function (e) {
-      var event = document.createEvent('CustomEvent');
-      event.initCustomEvent('outlineloaded', true, true, {
-        outlineCount: e.outlineCount
-      });
-      e.source.container.dispatchEvent(event);
+      // var event = document.createEvent('CustomEvent');
+      // event.initCustomEvent('outlineloaded', true, true, {
+      //   outlineCount: e.outlineCount
+      // });
+      // e.source.container.dispatchEvent(event);
     });
   }
 

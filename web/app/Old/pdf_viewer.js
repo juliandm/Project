@@ -412,7 +412,7 @@ var PDFViewer = (function pdfViewer() {
                 if (!pageView.pdfPage) {
                   pageView.setPdfPage(pdfPage);
                 }
-                linkService.cachePageRef(pageNum, pdfPage.ref);
+                // linkService.cachePageRef(pageNum, pdfPage.ref);
                 getPagesLeft--;
                 if (!getPagesLeft) {
                   resolvePagesPromise();

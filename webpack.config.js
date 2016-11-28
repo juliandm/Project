@@ -1,5 +1,6 @@
 var webpack = require("webpack");
 var path = require("path");
+var ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 module.exports = {
   entry: [
@@ -14,7 +15,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       "$": "jquery",
       "jQuery": "jquery"
-    })
+    }),
+    new ProgressBarPlugin()
   ],
   output: {
     path: __dirname,
@@ -30,6 +32,7 @@ module.exports = {
     ],
     alias: {
       applicationStyles: "web/app/styles/app.scss",
+      "pdfjs-web": ".",
       // actions: "app/actions/actions.jsx",
       // reducers: "app/reducers/reducers.jsx",
       // configureStore: "app/store/configureStore.jsx"

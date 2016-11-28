@@ -17,7 +17,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/glyphlist', ['exports', 'pdfjs/shared/util'], factory);
+    define('../core/glyphlist', ['exports', '../shared/util'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'));
   } else {

@@ -17,13 +17,13 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/evaluator', ['exports', 'pdfjs/shared/util',
-      'pdfjs/core/primitives', 'pdfjs/core/stream', 'pdfjs/core/parser',
-      'pdfjs/core/image', 'pdfjs/core/colorspace', 'pdfjs/core/murmurhash3',
-      'pdfjs/core/fonts', 'pdfjs/core/function', 'pdfjs/core/pattern',
-      'pdfjs/core/cmap', 'pdfjs/core/metrics', 'pdfjs/core/bidi',
-      'pdfjs/core/encodings', 'pdfjs/core/standard_fonts',
-      'pdfjs/core/unicode', 'pdfjs/core/glyphlist'], factory);
+    define('../core/evaluator', ['exports', '../shared/util',
+      '../core/primitives', '../core/stream', '../core/parser',
+      '../core/image', '../core/colorspace', '../core/murmurhash3',
+      '../core/fonts', '../core/function', '../core/pattern',
+      '../core/cmap', '../core/metrics', '../core/bidi',
+      '../core/encodings', '../core/standard_fonts',
+      '../core/unicode', '../core/glyphlist'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
       require('./stream.js'), require('./parser.js'), require('./image.js'),

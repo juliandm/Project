@@ -14,12 +14,12 @@
  */
 /* globals NetworkManager, module */
 
-'use strict';
+
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/worker', ['exports', 'pdfjs/shared/util',
-      'pdfjs/core/primitives', 'pdfjs/core/pdf_manager'],
+    define('../core/worker', ['exports', '../shared/util',
+      '../core/primitives', '../core/pdf_manager'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
@@ -558,7 +558,7 @@ var WorkerMessageHandler = {
         if (source.chunkedViewerLoading) {
           pdfStream = new PDFWorkerStream(source, handler);
         } else {
-          assert(PDFNetworkStream, 'pdfjs/core/network module is not loaded');
+          assert(PDFNetworkStream, '../core/network module is not loaded');
           pdfStream = new PDFNetworkStream(data);
         }
       } catch (ex) {

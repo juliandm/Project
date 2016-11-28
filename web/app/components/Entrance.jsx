@@ -1,6 +1,7 @@
 import React from "react";
 // var viewer = require("../../viewer.js");
-var app = require("../../app.js");
+var app = require("../Old/app.js");
+
 
 export class Entrance extends React.Component {
   hello () {

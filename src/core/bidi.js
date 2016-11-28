@@ -17,7 +17,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/bidi', ['exports'], factory);
+    define('../core/bidi', ['exports'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports);
   } else {

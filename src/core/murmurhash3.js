@@ -22,7 +22,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/murmurhash3', ['exports', 'pdfjs/shared/util'], factory);
+    define('../core/murmurhash3', ['exports', '../shared/util'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'));
   } else {

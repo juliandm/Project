@@ -19,9 +19,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/display/api', ['exports', 'pdfjs/shared/util',
-      'pdfjs/display/font_loader', 'pdfjs/display/canvas',
-      'pdfjs/display/metadata', 'pdfjs/display/dom_utils',
+    define('../display/api', ['exports', '../shared/util',
+      '../display/font_loader', '../display/canvas',
+      '../display/metadata', '../display/dom_utils',
       'require'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./font_loader.js'),
@@ -1085,7 +1085,7 @@ var PDFWorker = (function PDFWorkerClosure() {
     // pdf.worker.js file is needed.
     if (typeof PDFJSDev === 'undefined' || !PDFJSDev.test('PRODUCTION')) {
       if (typeof amdRequire === 'function') {
-        amdRequire(['pdfjs/core/network', 'pdfjs/core/worker'],
+        amdRequire(['../core/network', '../core/worker'],
             function (network, worker) {
           WorkerMessageHandler = worker.WorkerMessageHandler;
           fakeWorkerFilesLoadedCapability.resolve(WorkerMessageHandler);

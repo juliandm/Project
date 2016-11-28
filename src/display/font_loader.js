@@ -18,7 +18,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/display/font_loader', ['exports', 'pdfjs/shared/util'],
+    define('../display/font_loader', ['exports', '../shared/util'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'));
@@ -182,7 +182,7 @@ if (typeof PDFJSDev === 'undefined' || !PDFJSDev.test('MOZCENTRAL')) {
     }
 
     var context = this.loadingContext;
-    var requestId = 'pdfjs-font-loading-' + (context.nextRequestId++);
+    var requestId = '..-font-loading-' + (context.nextRequestId++);
     var request = {
       id: requestId,
       complete: LoadLoader_completeRequest,

@@ -17,10 +17,10 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/document', ['exports', 'pdfjs/shared/util',
-      'pdfjs/core/primitives', 'pdfjs/core/stream', 'pdfjs/core/obj',
-      'pdfjs/core/parser', 'pdfjs/core/crypto', 'pdfjs/core/evaluator',
-      'pdfjs/core/annotation'], factory);
+    define('../core/document', ['exports', '../shared/util',
+      '../core/primitives', '../core/stream', '../core/obj',
+      '../core/parser', '../core/crypto', '../core/evaluator',
+      '../core/annotation'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
       require('./stream.js'), require('./obj.js'), require('./parser.js'),

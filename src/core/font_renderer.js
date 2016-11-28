@@ -16,9 +16,9 @@
 'use strict';
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/font_renderer', ['exports', 'pdfjs/shared/util',
-      'pdfjs/core/stream', 'pdfjs/core/glyphlist', 'pdfjs/core/encodings',
-      'pdfjs/core/cff_parser'], factory);
+    define('../core/font_renderer', ['exports', '../shared/util',
+      '../core/stream', '../core/glyphlist', '../core/encodings',
+      '../core/cff_parser'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./stream.js'),
       require('./glyphlist.js'), require('./encodings.js'),

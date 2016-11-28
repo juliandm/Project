@@ -14,20 +14,19 @@
  */
 /* globals DEFAULT_URL, PDFBug, Stats */
 
-
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/app', ['exports', 'pdfjs-web/ui_utils',
-      'pdfjs-web/download_manager', 'pdfjs-web/pdf_history',
-      'pdfjs-web/preferences', 'pdfjs-web/pdf_sidebar',
-      'pdfjs-web/view_history', 'pdfjs-web/pdf_thumbnail_viewer',
-      'pdfjs-web/secondary_toolbar', 'pdfjs-web/password_prompt',
-      'pdfjs-web/pdf_presentation_mode', 'pdfjs-web/pdf_document_properties',
-      'pdfjs-web/hand_tool', 'pdfjs-web/pdf_viewer',
-      'pdfjs-web/pdf_rendering_queue', 'pdfjs-web/pdf_link_service',
-      'pdfjs-web/pdf_outline_viewer', 'pdfjs-web/overlay_manager',
-      'pdfjs-web/pdf_attachment_viewer', 'pdfjs-web/pdf_find_controller',
-      'pdfjs-web/pdf_find_bar', 'pdfjs-web/dom_events', 'pdfjs-web/pdfjs'],
+    define(['exports', 'pdfjs-web/ui_utils',
+      './download_manager', './pdf_history',
+      './preferences', './pdf_sidebar',
+      './view_history', './pdf_thumbnail_viewer',
+      './secondary_toolbar', './password_prompt',
+      './pdf_presentation_mode', './pdf_document_properties',
+      './hand_tool', './pdf_viewer',
+      './pdf_rendering_queue', './pdf_link_service',
+      './pdf_outline_viewer', './overlay_manager',
+      './pdf_attachment_viewer', './pdf_find_controller',
+      './pdf_find_bar', './dom_events', './pdfjs'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./ui_utils.js'), require('./download_manager.js'),
@@ -2351,7 +2350,7 @@ var PDFPrintServiceFactory = {
 };
 
 
-module.exports.PDFViewerApplication = PDFViewerApplication;
+exports.PDFViewerApplication = PDFViewerApplication;
 exports.DefaultExernalServices = DefaultExernalServices;
 exports.PDFPrintServiceFactory = PDFPrintServiceFactory;
 }));

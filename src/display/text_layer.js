@@ -18,8 +18,8 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/display/text_layer', ['exports', 'pdfjs/shared/util',
-      'pdfjs/display/dom_utils'], factory);
+    define('../display/text_layer', ['exports', '../shared/util',
+      '../display/dom_utils'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./dom_utils.js'));
   } else {

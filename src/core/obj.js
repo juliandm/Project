@@ -17,9 +17,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs/core/obj', ['exports', 'pdfjs/shared/util',
-      'pdfjs/core/primitives', 'pdfjs/core/crypto', 'pdfjs/core/parser',
-      'pdfjs/core/chunked_stream', 'pdfjs/core/colorspace'], factory);
+    define('../core/obj', ['exports', '../shared/util',
+      '../core/primitives', '../core/crypto', '../core/parser',
+      '../core/chunked_stream', '../core/colorspace'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
       require('./crypto.js'), require('./parser.js'),

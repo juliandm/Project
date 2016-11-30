@@ -93,9 +93,10 @@ if (typeof PDFJSDev !== 'undefined' &&
   }
   var dynamicLoaderSupported =
     typeof requirejs !== 'undefined' && requirejs.load;
+
   fakeWorkerFilesLoader = useRequireEnsure ? (function (callback) {
     require.ensure([], function () {
-      var worker = require('./pdf.worker.js');
+      var worker = require('pdfjs-dist/build/pdf.worker.js');
       callback(worker.WorkerMessageHandler);
     });
   }) : dynamicLoaderSupported ? (function (callback) {

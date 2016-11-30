@@ -33,6 +33,7 @@ module.exports = {
     alias: {
       applicationStyles: "web/app/styles/app.scss",
       "pdfjs-web": ".",
+      "pdfjs-dist": "../../"
       // actions: "app/actions/actions.jsx",
       // reducers: "app/reducers/reducers.jsx",
       // configureStore: "app/store/configureStore.jsx"

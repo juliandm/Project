@@ -17,8 +17,8 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/pdf_link_service', ['exports', 'pdfjs-web/ui_utils',
-      'pdfjs-web/dom_events'], factory);
+    define('Old/pdf_link_service', ['exports', 'Old/ui_utils',
+      'Old/dom_events'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./ui_utils.js'), require('./dom_events.js'));
   } else {

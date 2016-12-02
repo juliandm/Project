@@ -17,7 +17,7 @@
 //
 // (function (root, factory) {
 //   if (typeof define === 'function' && define.amd) {
-//     define('pdfjs-web/download_manager', ['exports', 'pdfjs-web/pdfjs'],
+//     define('Old/download_manager', ['exports', 'Old/pdfjs'],
 //       factory);
 //   } else if (typeof exports !== 'undefined') {
 //     factory(exports, require('./pdfjs.js'));

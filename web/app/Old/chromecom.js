@@ -18,11 +18,11 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/chromecom', ['exports', 'pdfjs-web/app',
-      'pdfjs-web/overlay_manager', 'pdfjs-web/preferences', 'pdfjs-web/pdfjs'],
+    define('Old/chromecom', ['exports', 'Old/app',
+      'Old/overlay_manager', 'Old/preferences', 'Old/pdfjs'],
       factory);
   } else if (typeof exports !== 'undefined') {
-    factory(exports, require('./app.js'), require('./overlay_manager.js'),
+    factory(exports, require('./application.js'), require('./overlay_manager.js'),
       require('./preferences.js'), require('./pdfjs.js'));
   } else {
     factory((root.pdfjsWebChromeCom = {}), root.pdfjsWebApp,
@@ -31,7 +31,7 @@
   }
 }(this, function (exports, app, overlayManager, preferences, pdfjsLib) {
   if (typeof PDFJSDev === 'undefined' || !PDFJSDev.test('CHROME')) {
-    throw new Error('Module "pdfjs-web/chromecom" shall not be used outside ' +
+    throw new Error('Module "Old/chromecom" shall not be used outside ' +
                     'CHROME build.');
   }
 

@@ -17,10 +17,10 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/firefoxcom', ['exports', 'pdfjs-web/preferences',
-      'pdfjs-web/app', 'pdfjs-web/pdfjs'], factory);
+    define('Old/firefoxcom', ['exports', 'Old/preferences',
+      'Old/app', 'Old/pdfjs'], factory);
   } else if (typeof exports !== 'undefined') {
-    factory(exports, require('./preferences.js'), require('./app.js'),
+    factory(exports, require('./preferences.js'), require('./application.js'),
       require('./pdfjs.js'));
   } else {
     factory((root.pdfjsWebFirefoxCom = {}), root.pdfjsWebPreferences,
@@ -29,7 +29,7 @@
 }(this, function (exports, preferences, app, pdfjsLib) {
 if (typeof PDFJSDev === 'undefined' ||
     !PDFJSDev.test('FIREFOX || MOZCENTRAL')) {
-  throw new Error('Module "pdfjs-web/firefoxcom" shall not be used outside ' +
+  throw new Error('Module "Old/firefoxcom" shall not be used outside ' +
                   'FIREFOX and MOZCENTRAL builds.');
 }
 

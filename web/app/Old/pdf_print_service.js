@@ -17,12 +17,12 @@
 //
 // (function (root, factory) {
 //   if (typeof define === 'function' && define.amd) {
-//     define('pdfjs-web/pdf_print_service', ['exports', 'pdfjs-web/ui_utils',
-//       'pdfjs-web/overlay_manager', 'pdfjs-web/app', 'pdfjs-web/pdfjs'],
+//     define('Old/pdf_print_service', ['exports', 'Old/ui_utils',
+//       'Old/overlay_manager', 'Old/app', 'Old/pdfjs'],
 //       factory);
 //   } else if (typeof exports !== 'undefined') {
 //     factory(exports, require('./ui_utils.js'), require('./overlay_manager.js'),
-//       require('./app.js'), require('./pdfjs.js'));
+//       require('./application.js'), require('./pdfjs.js'));
 //   } else {
 //     factory((root.pdfjsWebPDFPrintService = {}), root.pdfjsWebUIUtils,
 //       root.pdfjsWebOverlayManager, root.pdfjsWebApp, root.pdfjsWebPDFJS);

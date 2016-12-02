@@ -3,7 +3,7 @@ import ReactDOM from "react-dom"
 import { Router, Route, IndexRoute,  Link, hashHistory } from 'react-router'
 
 import Editor from './components/Editor'
-import Entrance from './components/Entrance'
+import Entrance from './app'
 import Main from "./components/Main.jsx"
 import Tutorial from "./components/Tutorial"
 

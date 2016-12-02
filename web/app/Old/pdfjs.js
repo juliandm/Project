@@ -18,9 +18,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/pdfjs', ['exports', '../../../src/main_loader'], factory);
+    define('Old/pdfjs', ['exports', '../../src/main_loader'], factory);
   } else if (typeof exports !== 'undefined') {
-    factory(exports, require('../src/main_loader.js'));
+    factory(exports, require('../../src/main_loader.js'));
   } else {
     factory((root.pdfjsWebPDFJS = {}), root.pdfjsMainLoader);
   }

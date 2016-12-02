@@ -17,8 +17,8 @@
 //
 // (function (root, factory) {
 //   if (typeof define === 'function' && define.amd) {
-//     define('pdfjs-web/pdf_sidebar', ['exports',
-//       'pdfjs-web/pdf_rendering_queue'], factory);
+//     define('Old/pdf_sidebar', ['exports',
+//       'Old/pdf_rendering_queue'], factory);
 //   } else if (typeof exports !== 'undefined') {
 //     factory(exports, require('./pdf_rendering_queue.js'));
 //   } else {

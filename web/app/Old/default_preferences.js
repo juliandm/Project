@@ -29,8 +29,8 @@ var DEFAULT_PREFERENCES;
     event.initCustomEvent('defaultpreferencesloaded', true, true, null);
     document.dispatchEvent(event);
   }
+  xhr.send();
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'default_preferences.json');
   xhr.onload = xhr.onerror = loaded;
-  xhr.send();
 })();

@@ -17,8 +17,8 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/text_layer_builder', ['exports', 'pdfjs-web/dom_events',
-        'pdfjs-web/pdfjs'], factory);
+    define('Old/text_layer_builder', ['exports', 'Old/dom_events',
+        'Old/pdfjs'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./dom_events.js'), require('./pdfjs.js'));
   } else {

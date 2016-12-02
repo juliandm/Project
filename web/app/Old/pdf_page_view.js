@@ -17,9 +17,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/pdf_page_view', ['exports',
-      'pdfjs-web/ui_utils', 'pdfjs-web/pdf_rendering_queue',
-      'pdfjs-web/dom_events', 'pdfjs-web/pdfjs'], factory);
+    define('Old/pdf_page_view', ['exports',
+      'Old/ui_utils', 'Old/pdf_rendering_queue',
+      'Old/dom_events', 'Old/pdfjs'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./ui_utils.js'),
       require('./pdf_rendering_queue.js'), require('./dom_events.js'),

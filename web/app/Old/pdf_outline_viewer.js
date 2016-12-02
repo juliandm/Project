@@ -17,7 +17,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/pdf_outline_viewer', ['exports', 'pdfjs-web/pdfjs'],
+    define('Old/pdf_outline_viewer', ['exports', 'Old/pdfjs'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./pdfjs.js'));

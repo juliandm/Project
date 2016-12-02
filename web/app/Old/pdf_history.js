@@ -18,7 +18,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/pdf_history', ['exports', 'pdfjs-web/dom_events'],
+    define('Old/pdf_history', ['exports', 'Old/dom_events'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./dom_events.js'));

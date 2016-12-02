@@ -17,10 +17,10 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('pdfjs-web/pdf_viewer', ['exports', 'pdfjs-web/ui_utils',
-      'pdfjs-web/pdf_page_view', 'pdfjs-web/pdf_rendering_queue',
-      'pdfjs-web/text_layer_builder', 'pdfjs-web/annotation_layer_builder',
-      'pdfjs-web/pdf_link_service', 'pdfjs-web/dom_events', 'pdfjs-web/pdfjs'],
+    define('Old/pdf_viewer', ['exports', 'Old/ui_utils',
+      'Old/pdf_page_view', 'Old/pdf_rendering_queue',
+      'Old/text_layer_builder', 'Old/annotation_layer_builder',
+      'Old/pdf_link_service', 'Old/dom_events', 'Old/pdfjs'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./ui_utils.js'), require('./pdf_page_view.js'),

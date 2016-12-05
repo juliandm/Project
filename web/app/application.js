@@ -31,7 +31,7 @@ require(["pdfjs-web/app"], function (app) {
   var config = getViewerConfiguration();
   app.PDFViewerApplication.run(config);
 
-  document.addEventListener('DOMContentLoaded', webViewerLoad, true);
+  // document.addEventListener('DOMContentLoaded', webViewerLoad, true);
 
 });
 

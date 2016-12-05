@@ -1485,7 +1485,7 @@ function webViewerInitialized() {
 
   if (typeof PDFJSDev === 'undefined' ||
       !PDFJSDev.test('FIREFOX || MOZCENTRAL')) {
-    mozL10n.setLanguage(PDFJS.locale);
+    // mozL10n.setLanguage(PDFJS.locale);
   } else {
     if (!PDFViewerApplication.supportsDocumentFonts) {
       PDFJS.disableFontFace = true;

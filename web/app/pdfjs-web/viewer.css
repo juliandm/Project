@@ -30,8 +30,6 @@ html {
 body {
   height: 100%;
   width: 100%;
-  background-color: #404040;
-  background-image: url(../../images/texture.png);
 }
 
 body,
@@ -219,12 +217,14 @@ html[dir='rtl'] #sidebarContent {
 #viewerContainer {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-  position: absolute;
+  position: relative;
   top: 0px;
   right: 0;
   bottom: 0;
   left: 0;
   outline: none;
+  background-color: #404040;
+  background-image: url(../../images/texture.png);
 }
 html[dir='ltr'] #viewerContainer {
   box-shadow: inset 1px 0 0 hsla(0,0%,100%,.05);
@@ -1739,6 +1739,8 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   }
   #viewerContainer {
     overflow: visible;
+    background-color: #404040;
+    background-image: url(../../images/texture.png);
   }
 
   #mainContainer, #viewerContainer, .page, .page canvas {

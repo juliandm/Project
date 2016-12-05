@@ -17,7 +17,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/metrics', ['exports', '../shared/util'], factory);
+    define('pdfjs/core/metrics', ['exports', 'pdfjs/shared/util'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'));
   } else {

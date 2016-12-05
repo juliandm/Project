@@ -17,8 +17,8 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../display/pattern_helper', ['exports', '../shared/util',
-      '../display/webgl'], factory);
+    define('pdfjs/display/pattern_helper', ['exports', 'pdfjs/shared/util',
+      'pdfjs/display/webgl'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./webgl.js'));
   } else {

@@ -17,8 +17,8 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/pdf_manager', ['exports', '../shared/util',
-      '../core/stream', '../core/chunked_stream', '../core/document'],
+    define('pdfjs/core/pdf_manager', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/stream', 'pdfjs/core/chunked_stream', 'pdfjs/core/document'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./stream.js'),

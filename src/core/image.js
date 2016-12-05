@@ -17,9 +17,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/image', ['exports', '../shared/util',
-      '../core/primitives', '../core/colorspace', '../core/stream',
-      '../core/jpx'], factory);
+    define('pdfjs/core/image', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/primitives', 'pdfjs/core/colorspace', 'pdfjs/core/stream',
+      'pdfjs/core/jpx'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
       require('./colorspace.js'), require('./stream.js'),

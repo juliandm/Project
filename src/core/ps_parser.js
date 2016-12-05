@@ -17,8 +17,8 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/ps_parser', ['exports', '../shared/util',
-      '../core/parser'], factory);
+    define('pdfjs/core/ps_parser', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/parser'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./parser.js'));
   } else {

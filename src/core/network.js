@@ -20,8 +20,8 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/network', ['exports', '../shared/util',
-      '../core/worker'], factory);
+    define('pdfjs/core/network', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/worker'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./worker.js'));
   } else {
@@ -30,7 +30,7 @@
   }
 }(this, function (exports, sharedUtil, coreWorker) {
 if (typeof PDFJSDev !== 'undefined' && PDFJSDev.test('FIREFOX || MOZCENTRAL')) {
-  throw new Error('Module "../core/network" shall not ' +
+  throw new Error('Module "pdfjs/core/network" shall not ' +
                   'be used with FIREFOX or MOZCENTRAL build.');
 }
 

@@ -17,7 +17,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../display/svg', ['exports', '../shared/util'], factory);
+    define('pdfjs/display/svg', ['exports', 'pdfjs/shared/util'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'));
   } else {
@@ -1147,6 +1147,7 @@ var SVGGraphics = (function SVGGraphicsClosure() {
       svg.setAttributeNS(null, 'version', '1.1');
       svg.setAttributeNS(null, 'width', viewport.width + 'px');
       svg.setAttributeNS(null, 'height', viewport.height + 'px');
+      svg.setAttributeNS(null, 'preserveAspectRatio', 'none');
       svg.setAttributeNS(null, 'viewBox', '0 0 ' + viewport.width +
                                           ' ' + viewport.height);
 

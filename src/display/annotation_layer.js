@@ -14,11 +14,11 @@
  */
 
 'use strict';
-
+console.log("Hello Annotation layer")
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../display/annotation_layer', ['exports', '../shared/util',
-      '../display/dom_utils'], factory);
+    define('pdfjs/display/annotation_layer', ['exports', 'pdfjs/shared/util',
+      'pdfjs/display/dom_utils'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./dom_utils.js'));
   } else {

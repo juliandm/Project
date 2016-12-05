@@ -14,12 +14,12 @@
  */
 /* globals NetworkManager, module */
 
-
+'use strict';
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/worker', ['exports', '../shared/util',
-      '../core/primitives', '../core/pdf_manager'],
+    define('pdfjs/core/worker', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/primitives', 'pdfjs/core/pdf_manager'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
@@ -558,7 +558,7 @@ var WorkerMessageHandler = {
         if (source.chunkedViewerLoading) {
           pdfStream = new PDFWorkerStream(source, handler);
         } else {
-          assert(PDFNetworkStream, '../core/network module is not loaded');
+          assert(PDFNetworkStream, 'pdfjs/core/network module is not loaded');
           pdfStream = new PDFNetworkStream(data);
         }
       } catch (ex) {
@@ -747,14 +747,17 @@ var WorkerMessageHandler = {
       return pdfManager.getPage(data.pageIndex).then(function(page) {
         var rotatePromise = pdfManager.ensure(page, 'rotate');
         var refPromise = pdfManager.ensure(page, 'ref');
+        var userUnitPromise = pdfManager.ensure(page, 'userUnit');
         var viewPromise = pdfManager.ensure(page, 'view');
 
-        return Promise.all([rotatePromise, refPromise, viewPromise]).then(
-            function(results) {
+        return Promise.all([
+          rotatePromise, refPromise, userUnitPromise, viewPromise
+        ]).then(function(results) {
           return {
             rotate: results[0],
             ref: results[1],
-            view: results[2]
+            userUnit: results[2],
+            view: results[3]
           };
         });
       });

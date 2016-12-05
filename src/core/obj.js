@@ -17,9 +17,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/obj', ['exports', '../shared/util',
-      '../core/primitives', '../core/crypto', '../core/parser',
-      '../core/chunked_stream', '../core/colorspace'], factory);
+    define('pdfjs/core/obj', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/primitives', 'pdfjs/core/crypto', 'pdfjs/core/parser',
+      'pdfjs/core/chunked_stream', 'pdfjs/core/colorspace'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
       require('./crypto.js'), require('./parser.js'),
@@ -589,12 +589,17 @@ var Catalog = (function CatalogClosure() {
   };
 
   /**
-   * Helper function used to parse the contents of destination dictionaries.
-   * @param {Dict} destDict - The dictionary containing the destination.
-   * @param {Object} resultObj - The object where the parsed destination
+   * @typedef ParseDestDictionaryParameters
+   * @property {Dict} destDict - The dictionary containing the destination.
+   * @property {Object} resultObj - The object where the parsed destination
    *   properties will be placed.
-   * @param {string} docBaseUrl - (optional) The document base URL that is used
-   *   when attempting to recover valid absolute URLs from relative ones.
+   * @property {string} docBaseUrl - (optional) The document base URL that is
+   *   used when attempting to recover valid absolute URLs from relative ones.
+   */
+
+  /**
+   * Helper function used to parse the contents of destination dictionaries.
+   * @param {ParseDestDictionaryParameters} params
    */
   Catalog.parseDestDictionary = function Catalog_parseDestDictionary(params) {
     // Lets URLs beginning with 'www.' default to using the 'http://' protocol.

@@ -1,9 +1,11 @@
 // var viewer = require("../../viewer.js");
 
 requirejs.config({
+  baseUrl : "../", //APP
   paths: {
-    "pdfjs-web": "Old/",
-    "pdfjs-dist": "../../"
+    "pdfjs-web": "pdfjs-web",
+    "pdfjs-dist": "../..",
+    "pdfjs": "../../src" //src
   }
 });
 
@@ -11,20 +13,26 @@ requirejs.config({
 require(["jquery"], function ($) {
   $("#viewer").html("Hello World");
   console.log("Hello");
-  alert("Hallo");
+  // alert("Hallo");
 
 });
+
 
 require(["pdfjs-web/app"], function (app) {
   function getViewerConfiguration() {
   return {
     appContainer: document.body,
-    mainContainer:  $("#viewerContainer"),
+    mainContainer:  document.getElementById('viewerContainer'),
     viewerContainer: document.getElementById('viewer'),
     eventBus: null, // using global event bus with DOM events
   }
   }
 
   var config = getViewerConfiguration();
-  app.run(config);
+  app.PDFViewerApplication.run(config);
+
+  document.addEventListener('DOMContentLoaded', webViewerLoad, true);
+
 });
+
+

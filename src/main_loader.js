@@ -14,13 +14,13 @@
  */
 
 'use strict';
-
+console.log("Hello main loader")
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('main_loader', ['exports', './display/api',
-      './display/annotation_layer', './display/text_layer',
-      './display/dom_utils', './shared/util', './display/svg',
-      './display/global'],
+    define('pdfjs/main_loader', ['exports', 'pdfjs/display/api',
+      'pdfjs/display/annotation_layer', 'pdfjs/display/text_layer',
+      'pdfjs/display/dom_utils', 'pdfjs/shared/util', 'pdfjs/display/svg',
+      'pdfjs/display/global'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('./display/api.js'),
@@ -29,10 +29,10 @@
       require('./shared/util.js'), require('./display/svg.js'),
       require('./display/global.js'));
   } else {
-    factory((root.ainLoader = {}), root.isplayAPI,
-      root.isplayAnnotationLayer, root.isplayTextLayer,
-      root.isplayDOMUtils, root.haredUtil, root.isplaySVG,
-      root.isplayGlobal);
+    factory((root.pdfjsMainLoader = {}), root.pdfjsDisplayAPI,
+      root.pdfjsDisplayAnnotationLayer, root.pdfjsDisplayTextLayer,
+      root.pdfjsDisplayDOMUtils, root.pdfjsSharedUtil, root.pdfjsDisplaySVG,
+      root.pdfjsDisplayGlobal);
   }
 }(this, function (exports, displayAPI, displayAnnotationLayer,
                   displayTextLayer, displayDOMUtils, sharedUtil,

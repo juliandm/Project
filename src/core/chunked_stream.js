@@ -17,7 +17,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/chunked_stream', ['exports', '../shared/util'],
+    define('pdfjs/core/chunked_stream', ['exports', 'pdfjs/shared/util'],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'));

@@ -17,10 +17,10 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/document', ['exports', '../shared/util',
-      '../core/primitives', '../core/stream', '../core/obj',
-      '../core/parser', '../core/crypto', '../core/evaluator',
-      '../core/annotation'], factory);
+    define('pdfjs/core/document', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/primitives', 'pdfjs/core/stream', 'pdfjs/core/obj',
+      'pdfjs/core/parser', 'pdfjs/core/crypto', 'pdfjs/core/evaluator',
+      'pdfjs/core/annotation'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
       require('./stream.js'), require('./obj.js'), require('./parser.js'),
@@ -42,6 +42,7 @@ var error = sharedUtil.error;
 var info = sharedUtil.info;
 var isArray = sharedUtil.isArray;
 var isArrayBuffer = sharedUtil.isArrayBuffer;
+var isNum = sharedUtil.isNum;
 var isString = sharedUtil.isString;
 var shadow = sharedUtil.shadow;
 var stringToBytes = sharedUtil.stringToBytes;
@@ -67,6 +68,7 @@ var AnnotationFactory = coreAnnotation.AnnotationFactory;
 
 var Page = (function PageClosure() {
 
+  var DEFAULT_USER_UNIT = 1.0;
   var LETTER_SIZE_MEDIABOX = [0, 0, 612, 792];
 
   function Page(pdfManager, xref, pageIndex, pageDict, ref, fontCache) {
@@ -136,6 +138,14 @@ var Page = (function PageClosure() {
         obj = LETTER_SIZE_MEDIABOX;
       }
       return shadow(this, 'mediaBox', obj);
+    },
+
+    get userUnit() {
+      var obj = this.getPageProp('UserUnit');
+      if (!isNum(obj) || obj <= 0) {
+        obj = DEFAULT_USER_UNIT;
+      }
+      return shadow(this, 'userUnit', obj);
     },
 
     get view() {

@@ -18,9 +18,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../display/canvas', ['exports', '../shared/util',
-      '../display/dom_utils', '../display/pattern_helper',
-      '../display/webgl'], factory);
+    define('pdfjs/display/canvas', ['exports', 'pdfjs/shared/util',
+      'pdfjs/display/dom_utils', 'pdfjs/display/pattern_helper',
+      'pdfjs/display/webgl'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./dom_utils.js'),
       require('./pattern_helper.js'), require('./webgl.js'));
@@ -1359,9 +1359,7 @@ var CanvasGraphics = (function CanvasGraphicsClosure() {
       }
 
       var name = fontObj.loadedName || 'sans-serif';
-      var bold = fontObj.black ? (fontObj.bold ? '900' : 'bold') :
-                                 (fontObj.bold ? 'bold' : 'normal');
-
+      var bold = fontObj.black ? '900' : (fontObj.bold ? 'bold' : 'normal');
       var italic = fontObj.italic ? 'italic' : 'normal';
       var typeface = '"' + name + '", ' + fontObj.fallbackName;
 

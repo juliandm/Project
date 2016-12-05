@@ -18,7 +18,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../display/metadata', ['exports', '../shared/util'], factory);
+    define('pdfjs/display/metadata', ['exports', 'pdfjs/shared/util'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'));
   } else {

@@ -17,11 +17,11 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/fonts', ['exports', '../shared/util',
-      '../core/primitives', '../core/stream', '../core/glyphlist',
-      '../core/font_renderer', '../core/encodings',
-      '../core/standard_fonts', '../core/unicode',
-      '../core/type1_parser', '../core/cff_parser'], factory);
+    define('pdfjs/core/fonts', ['exports', 'pdfjs/shared/util',
+      'pdfjs/core/primitives', 'pdfjs/core/stream', 'pdfjs/core/glyphlist',
+      'pdfjs/core/font_renderer', 'pdfjs/core/encodings',
+      'pdfjs/core/standard_fonts', 'pdfjs/core/unicode',
+      'pdfjs/core/type1_parser', 'pdfjs/core/cff_parser'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./primitives.js'),
       require('./stream.js'), require('./glyphlist.js'),
@@ -674,7 +674,7 @@ var Font = (function FontClosure() {
         for (charCode in GlyphMapForStandardFonts) {
           map[+charCode] = GlyphMapForStandardFonts[charCode];
         }
-        if (/ArialBlack/i.test(name)) {
+        if (/Arial-?Black/i.test(name)) {
           var SupplementalGlyphMapForArialBlack =
             getSupplementalGlyphMapForArialBlack();
           for (charCode in SupplementalGlyphMapForArialBlack) {

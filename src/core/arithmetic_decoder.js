@@ -17,7 +17,7 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../core/arithmetic_decoder', ['exports'], factory);
+    define('pdfjs/core/arithmetic_decoder', ['exports'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports);
   } else {

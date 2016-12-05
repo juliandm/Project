@@ -19,9 +19,9 @@
 
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define('../display/api', ['exports', '../shared/util',
-      '../display/font_loader', '../display/canvas',
-      '../display/metadata', '../display/dom_utils',
+    define('pdfjs/display/api', ['exports', 'pdfjs/shared/util',
+      'pdfjs/display/font_loader', 'pdfjs/display/canvas',
+      'pdfjs/display/metadata', 'pdfjs/display/dom_utils',
       'require'], factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('../shared/util.js'), require('./font_loader.js'),
@@ -93,10 +93,9 @@ if (typeof PDFJSDev !== 'undefined' &&
   }
   var dynamicLoaderSupported =
     typeof requirejs !== 'undefined' && requirejs.load;
-
   fakeWorkerFilesLoader = useRequireEnsure ? (function (callback) {
     require.ensure([], function () {
-      var worker = require('pdfjs-dist/build/pdf.worker.js');
+      var worker = require('./pdf.worker.js');
       callback(worker.WorkerMessageHandler);
     });
   }) : dynamicLoaderSupported ? (function (callback) {
@@ -749,6 +748,12 @@ var PDFPageProxy = (function PDFPageProxyClosure() {
       return this.pageInfo.ref;
     },
     /**
+     * @return {number} The default size of units in 1/72nds of an inch.
+     */
+    get userUnit() {
+      return this.pageInfo.userUnit;
+    },
+    /**
      * @return {Array} An array of the visible portion of the PDF page in the
      * user space units - [x1, y1, x2, y2].
      */
@@ -1086,7 +1091,7 @@ var PDFWorker = (function PDFWorkerClosure() {
     // pdf.worker.js file is needed.
     if (typeof PDFJSDev === 'undefined' || !PDFJSDev.test('PRODUCTION')) {
       if (typeof amdRequire === 'function') {
-        amdRequire(['../core/network', '../core/worker'],
+        amdRequire(['pdfjs/core/network', 'pdfjs/core/worker'],
             function (network, worker) {
           WorkerMessageHandler = worker.WorkerMessageHandler;
           fakeWorkerFilesLoadedCapability.resolve(WorkerMessageHandler);

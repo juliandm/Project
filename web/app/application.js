@@ -18,7 +18,7 @@ requirejs.config({
 // });
 
 
-require(["pdfjs-web/app", ], function (app) {
+require(["pdfjs-web/app", "components/clickCopy"], function (app, clickCopy) {
   function getViewerConfiguration() {
   return {
     appContainer: document.body,

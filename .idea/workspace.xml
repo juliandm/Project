@@ -5,132 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189be12c-b877-4c35-ad14-fee51f7e5e27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/components/clickCopy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.abide.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.accordion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.accordionMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.core.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.drilldown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.dropdownMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.equalizer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.interchange.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.magellan.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.offcanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.orbit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.responsiveMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.responsiveToggle.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.reveal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.slider.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.sticky.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.tabs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.toggler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.box.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.keyboard.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.mediaQuery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.motion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.nest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.timerAndImageLoader.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.touch.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation-plugins/foundation.util.triggers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/foundation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/components/_toolbar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/_global.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_accordion-menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_accordion.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_badge.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_breadcrumbs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_button-group.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_callout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_close-button.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_drilldown.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_dropdown-menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_dropdown.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_flex-video.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_flex.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_float.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_label.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_media-object.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_menu-icon.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_menu.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_off-canvas.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_orbit.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_pagination.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_progress-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_reveal.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_slider.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_sticky.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_switch.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_table.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_tabs.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_thumbnail.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_title-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_tooltip.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_top-bar.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/components/_visibility.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_checkbox.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_error.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_fieldset.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_forms.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_help-text.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_input-group.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_label.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_meter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_progress.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_range.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_select.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/forms/_text.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/foundation.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_classes.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_column.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_flex-grid.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_grid.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_gutter.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_layout.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_position.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_row.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_size.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/settings/_settings.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/typography/_alignment.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/typography/_base.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/typography/_helpers.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/typography/_print.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/typography/_typography.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_breakpoint.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_color.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_flex.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_selector.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_unit.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_util.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/foundation-scss/util/_value.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/app.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/components/About.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/components/Editor.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/components/Main.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/components/Navigation.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/components/Tutorial.jsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/pdfjs-web/viewer1.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/styles/components/_container.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/styles/components/_page-title.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/styles/components/_todo.scss" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/app/pdfjs-web/annotation_layer_builder.css" afterPath="$PROJECT_DIR$/web/app/styles/_annotation_layer_builder.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/app/pdfjs-web/pdf_viewer.css" afterPath="$PROJECT_DIR$/web/app/styles/_pdf_viewer.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/app/pdfjs-web/text_layer_builder.css" afterPath="$PROJECT_DIR$/web/app/styles/_text_layer_builder.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/web/app/pdfjs-web/viewer.css" afterPath="$PROJECT_DIR$/web/app/styles/_viewer.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make.js" afterPath="$PROJECT_DIR$/make.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/display/annotation_layer.js" afterPath="$PROJECT_DIR$/src/display/annotation_layer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main_loader.js" afterPath="$PROJECT_DIR$/src/main_loader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/application.js" afterPath="$PROJECT_DIR$/web/app/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/pdfjs-web/pdfjs.js" afterPath="$PROJECT_DIR$/web/app/pdfjs-web/pdfjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/pdfjs-web/viewer.html" afterPath="$PROJECT_DIR$/web/app/pdfjs-web/viewer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/public/index.html" afterPath="$PROJECT_DIR$/web/app/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/app.scss" afterPath="$PROJECT_DIR$/web/app/styles/app.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/base/_foundation-settings.scss" afterPath="$PROJECT_DIR$/web/app/styles/base/_foundation-settings.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/components/clickCopy.js" afterPath="$PROJECT_DIR$/web/app/components/clickCopy.js" />
     </list>
     <ignored path="pdf.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -172,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/application.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="72">
               <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding />
             </state>
@@ -185,8 +61,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
+            <state relative-caret-position="176">
+              <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -232,12 +108,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clickCopy.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="clickCopy.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/app/components/clickCopy.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="360">
+              <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="chromecom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/pdfjs-web/chromecom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-324">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -247,16 +135,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
               <caret line="44" column="10" selection-start-line="44" selection-start-column="4" selection-end-line="44" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="foundation.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/foundation.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="7689" column="69" selection-start-line="7689" selection-start-column="68" selection-end-line="7689" selection-end-column="69" />
               <folding />
             </state>
           </provider>
@@ -324,8 +202,8 @@
         <option value="$PROJECT_DIR$/web/app/public/index.html" />
         <option value="$PROJECT_DIR$/web/app/styles/_viewer.scss" />
         <option value="$PROJECT_DIR$/web/app/styles/components/_toolbar.scss" />
-        <option value="$PROJECT_DIR$/web/app/components/clickCopy.js" />
         <option value="$PROJECT_DIR$/web/app/application.js" />
+        <option value="$PROJECT_DIR$/web/app/components/clickCopy.js" />
       </list>
     </option>
   </component>
@@ -339,8 +217,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="82" />
+    <option name="x" value="83" />
+    <option name="y" value="486" />
     <option name="width" value="1291" />
     <option name="height" value="686" />
   </component>
@@ -438,7 +316,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="pdfjs-web" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -743,8 +621,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="82" width="1291" height="686" extended-state="0" />
-    <editor active="false" />
+    <frame x="83" y="486" width="1291" height="686" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25140563" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -755,7 +633,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23346613" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36394557" sideWeight="0.49387756" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36394557" sideWeight="0.49387756" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -784,14 +662,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/app/pdfjs-web/viewer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3168">
-          <caret line="189" column="15" selection-start-line="189" selection-start-column="15" selection-end-line="189" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMEvents.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2844">
@@ -1132,14 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="54" column="50" selection-start-line="54" selection-start-column="50" selection-end-line="54" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/styles/_text_layer_builder.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1183,18 +1045,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/components/clickCopy.js">
+    <entry file="file://$PROJECT_DIR$/web/app/pdfjs-web/chromecom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
-          <folding />
+        <state relative-caret-position="-324">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state relative-caret-position="72">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/components/clickCopy.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
       </provider>

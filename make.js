@@ -146,15 +146,15 @@ target.generic = function() {
       [COMMON_WEB_FILES_PREPROCESS, GENERIC_DIR + '/web']
     ],
     preprocessCSS: [
-      ['generic', 'web/viewer.css',
-       GENERIC_DIR + '/web/viewer.css']
+      ['generic', 'web/_viewer.foundation-scss',
+       GENERIC_DIR + '/web/_viewer.foundation-scss']
     ]
   };
   builder.build(setup);
 
   cleanupJSSource(GENERIC_DIR + '/build/pdf.js');
   cleanupJSSource(GENERIC_DIR + '/web/viewer.js');
-  cleanupCSSSource(GENERIC_DIR + '/web/viewer.css');
+  cleanupCSSSource(GENERIC_DIR + '/web/_viewer.foundation-scss');
 };
 
 target.components = function() {
@@ -186,13 +186,13 @@ target.components = function() {
     ],
     preprocess: [],
     preprocessCSS: [
-      ['components', 'web/pdf_viewer.css', COMPONENTS_DIR + 'pdf_viewer.css'],
+      ['components', 'web/_pdf_viewer.foundation-scss', COMPONENTS_DIR + '_pdf_viewer.foundation-scss'],
     ]
   };
   builder.build(setup);
 
   cleanupJSSource(COMPONENTS_DIR + 'pdf_viewer.js');
-  cleanupCSSSource(COMPONENTS_DIR + 'pdf_viewer.css');
+  cleanupCSSSource(COMPONENTS_DIR + '_pdf_viewer.foundation-scss');
 };
 
 target.jsdoc = function() {
@@ -549,13 +549,13 @@ target.minified = function() {
       [COMMON_WEB_FILES_PREPROCESS, MINIFIED_DIR + '/web']
     ],
     preprocessCSS: [
-      ['minified', 'web/viewer.css',
-       MINIFIED_DIR + '/web/viewer.css']
+      ['minified', 'web/_viewer.foundation-scss',
+       MINIFIED_DIR + '/web/_viewer.foundation-scss']
     ]
   };
   builder.build(setup);
 
-  cleanupCSSSource(MINIFIED_DIR + '/web/viewer.css');
+  cleanupCSSSource(MINIFIED_DIR + '/web/_viewer.foundation-scss');
 
   var viewerFiles = [
     'web/compatibility.js',
@@ -678,8 +678,8 @@ target.firefox = function() {
       [FIREFOX_EXTENSION_DIR + 'bootstrap.js', FIREFOX_BUILD_DIR]
     ],
     preprocessCSS: [
-      ['firefox', 'web/viewer.css',
-       FIREFOX_BUILD_CONTENT_DIR + '/web/viewer.css']
+      ['firefox', 'web/_viewer.foundation-scss',
+       FIREFOX_BUILD_CONTENT_DIR + '/web/_viewer.foundation-scss']
     ]
   };
   builder.build(setup);
@@ -687,7 +687,7 @@ target.firefox = function() {
   cleanupJSSource(FIREFOX_BUILD_CONTENT_DIR + '/web/viewer.js');
   cleanupJSSource(FIREFOX_BUILD_DIR + 'bootstrap.js');
   cleanupJSSource(FIREFOX_BUILD_CONTENT_DIR + 'PdfjsChromeUtils.jsm');
-  cleanupCSSSource(FIREFOX_BUILD_CONTENT_DIR + '/web/viewer.css');
+  cleanupCSSSource(FIREFOX_BUILD_CONTENT_DIR + '/web/_viewer.foundation-scss');
 
   // Remove '.DS_Store' and other hidden files
   find(FIREFOX_BUILD_DIR).forEach(function(file) {
@@ -799,8 +799,8 @@ target.mozcentral = function() {
     ],
     preprocessCSS: [
       ['mozcentral',
-       'web/viewer.css',
-       MOZCENTRAL_CONTENT_DIR + '/web/viewer.css']
+       'web/_viewer.foundation-scss',
+       MOZCENTRAL_CONTENT_DIR + '/web/_viewer.foundation-scss']
     ]
   };
   builder.build(setup);
@@ -808,7 +808,7 @@ target.mozcentral = function() {
   cleanupJSSource(MOZCENTRAL_CONTENT_DIR + '/web/viewer.js');
   cleanupJSSource(MOZCENTRAL_CONTENT_DIR + '/PdfJs.jsm');
   cleanupJSSource(MOZCENTRAL_CONTENT_DIR + '/PdfjsChromeUtils.jsm');
-  cleanupCSSSource(MOZCENTRAL_CONTENT_DIR + '/web/viewer.css');
+  cleanupCSSSource(MOZCENTRAL_CONTENT_DIR + '/web/_viewer.foundation-scss');
 
   // Remove '.DS_Store' and other hidden files
   find(MOZCENTRAL_DIR).forEach(function(file) {
@@ -891,14 +891,14 @@ target.chromium = function() {
       [COMMON_WEB_FILES_PREPROCESS, CHROME_BUILD_CONTENT_DIR + '/web']
     ],
     preprocessCSS: [
-      ['chrome', 'web/viewer.css',
-       CHROME_BUILD_CONTENT_DIR + '/web/viewer.css']
+      ['chrome', 'web/_viewer.foundation-scss',
+       CHROME_BUILD_CONTENT_DIR + '/web/_viewer.foundation-scss']
     ]
   };
   builder.build(setup);
 
   cleanupJSSource(CHROME_BUILD_CONTENT_DIR + '/web/viewer.js');
-  cleanupCSSSource(CHROME_BUILD_CONTENT_DIR + '/web/viewer.css');
+  cleanupCSSSource(CHROME_BUILD_CONTENT_DIR + '/web/_viewer.foundation-scss');
 
   // Update the build version number
   var VERSION = getCurrentVersion();

@@ -1,11 +1,20 @@
 @import "base/variables";
+@import "base/foundation-settings";
 
 // foundation
-@import "base/foundation-settings";
-@import "foundation";
+@import "foundation-scss/foundation";
 @include foundation-everything;
 
-// Components
-@import "components/container";
-@import "components/page-title";
-@import "components/todo";
+//PDFJS
+@import "annotation_layer_builder";
+@import "pdf_viewer";
+@import "text_layer_builder";
+@import "viewer";
+
+//Components
+@import "components/toolbar";
+
+
+
+//sass ./web/app/styles/app.foundation-scss ./web/app/styles/app.css
+//sass --watch ./web/app/styles/app.foundation-scss

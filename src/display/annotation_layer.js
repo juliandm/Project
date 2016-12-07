@@ -14,7 +14,6 @@
  */
 
 'use strict';
-console.log("Hello Annotation layer")
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define('pdfjs/display/annotation_layer', ['exports', 'pdfjs/shared/util',

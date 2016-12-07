@@ -10,15 +10,15 @@ requirejs.config({
 });
 
 
-require(["jquery"], function ($) {
-  $("#viewer").html("Hello World");
-  console.log("Hello");
-  // alert("Hallo");
+// require(["jquery"], function ($) {
+//   $("#viewer").html("Hello World");
+//   console.log("Hello");
+//   // alert("Hallo");
+//
+// });
 
-});
 
-
-require(["pdfjs-web/app"], function (app) {
+require(["pdfjs-web/app", ], function (app) {
   function getViewerConfiguration() {
   return {
     appContainer: document.body,

@@ -14,7 +14,6 @@
  */
 
 'use strict';
-console.log("Hello main loader")
 (function (root, factory) {
   if (typeof define === 'function' && define.amd) {
     define('pdfjs/main_loader', ['exports', 'pdfjs/display/api',

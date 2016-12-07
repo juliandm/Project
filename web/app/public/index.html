@@ -12,7 +12,8 @@
     <script data-main="../application.js" src="../../../node_modules/requirejs/require.js"></script>
 <!--#endif-->
 
-    <link rel="stylesheet" href="../pdfjs-web/viewer.css">
+
+    <link rel="stylesheet" href="../styles/app.css">
 <!--#if !PRODUCTION-->
     <link rel="resource" type="application/l10n" href="locale/locale.properties">
 <!--#endif-->
@@ -22,7 +23,7 @@
 <!--#endif-->
 
 <!--#if !PRODUCTION-->
-    <script src="../../../external/webL10n/l10n.js"></script>
+    <!--<script src="../../../external/webL10n/l10n.js"></script>-->
 <!--#endif-->
 
 
@@ -41,93 +42,61 @@
 <!--#include viewer-snippet-minified.html-->
 <!--#endif-->
 
+
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation | Welcome</title>
-    <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
   </head>
   <body>
 
-    <!-- Start Top Bar -->
-    <div class="top-bar">
-      <div class="top-bar-left">
-        <ul class="menu">
-          <li class="menu-text">Blog</li>
-          <li><a href="#">One</a></li>
-          <li><a href="#">Two</a></li>
-          <li><a href="#">Three</a></li>
-        </ul>
+<div class="mainContainer">
+  <div class="top-bar-container" data-sticky-container>
+    <div class="sticky" data-sticky data-options="marginTop: 0;">
+      <div class="top-bar">
+        <div class="row column">
+          <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+              <li class="menu-text">Site Title</li>
+              <li class="has-submenu">
+                <a href="#">One</a>
+                <ul class="submenu menu vertical" data-submenu>
+                  <li><a href="#">One</a></li>
+                  <li><a href="#">Two</a></li>
+                  <li><a href="#">Three</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Two</a></li>
+              <li><a href="#">Three</a></li>
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li>
+                <input type="search" placeholder="Search">
+              </li>
+              <li>
+                <button type="button" class="button">Search</button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- End Top Bar -->
-
-    <div class="callout large primary">
-      <div class="row column text-center">
-        <h1>Our Blog</h1>
-        <h2 class="subheader">Such a Simple Blog Layout</h2>
-      </div>
-    </div>
+  </div>
 
     <!-- We can now combine rows and columns when there's only one column in that row -->
     <div id="viewerContainer" tabindex="0">
       <div id="viewer" class="pdfViewer"></div>
     </div>
+</div>
 
-    <div class="row medium-8 large-7 columns">
-      <div class="blog-post">
-        <h3>Awesome blog post title <small>3/6/2015</small></h3>
-        <img class="thumbnail" src="http://placehold.it/850x350">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Mike Mikers</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
 
-      <div class="blog-post">
-        <h3>Awesome blog post title <small>3/6/2015</small></h3>
-        <img class="thumbnail" src="http://placehold.it/850x350">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Mike Mikers</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="blog-post">
-        <h3>Awesome blog post title <small>3/6/2015</small></h3>
-        <img class="thumbnail" src="http://placehold.it/850x350">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Mike Mikers</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="blog-post">
-        <h3>Awesome blog post title <small>3/6/2015</small></h3>
-        <img class="thumbnail" src="http://placehold.it/850x350">
-        <p>Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus.</p>
-        <div class="callout">
-          <ul class="menu simple">
-            <li><a href="#">Author: Mike Mikers</a></li>
-            <li><a href="#">Comments: 3</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-
-    <!--<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>-->
-    <!--<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>-->
-    <!--<script>-->
-      <!--$(document).foundation();-->
-    <!--</script>-->
+    <script src="../jquery.js"></script>
+    <script src="../foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
   </body>
 </html>
 

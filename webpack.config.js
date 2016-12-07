@@ -31,7 +31,7 @@ module.exports = {
       "./web/app/styles"
     ],
     alias: {
-      applicationStyles: "web/app/styles/app.scss",
+      applicationStyles: "web/app/styles/app.foundation-scss",
       "pdfjs-web": ".",
       "pdfjs-dist": "../../"
       // actions: "app/actions/actions.jsx",
@@ -58,7 +58,7 @@ module.exports = {
   },
   sassLoader: {
     includePaths: [
-      path.resolve(__dirname, "./node_modules/foundation-sites/scss")
+      path.resolve(__dirname, "./node_modules/foundation-sites/foundation-scss")
     ]
   },
   devtool: "source-map"

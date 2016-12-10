@@ -5,28 +5,23 @@ requirejs.config({
   paths: {
     "pdfjs-web": "pdfjs-web",
     "pdfjs-dist": "../..",
-    "pdfjs": "../../src" //src
+    "pdfjs": "../../src", //src
   }
 });
 
 
-// require(["jquery"], function ($) {
-//   $("#viewer").html("Hello World");
-//   console.log("Hello");
-//   // alert("Hallo");
-//
-// });
 
 
-require(["pdfjs-web/app", "components/clickCopy"], function (app, clickCopy) {
+define(["pdfjs-web/app", "components/clickCopy", "components/search", "components/dropDown"], function (app, clickCopy, search, dropDown) {
   function getViewerConfiguration() {
-  return {
-    appContainer: document.body,
-    mainContainer:  document.getElementById('viewerContainer'),
-    viewerContainer: document.getElementById('viewer'),
-    eventBus: null, // using global event bus with DOM events
+    return {
+      appContainer: document.body,
+      mainContainer:  document.getElementById('viewerContainer'),
+      viewerContainer: document.getElementById('viewer'),
+      eventBus: null, // using global event bus with DOM events
+    }
   }
-  }
+
 
   var config = getViewerConfiguration();
   app.PDFViewerApplication.run(config);

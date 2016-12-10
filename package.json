@@ -28,6 +28,7 @@
     "jquery": "^2.2.1",
     "jsdoc": "^3.3.0-alpha9",
     "jshint": "~2.8.0",
+    "mark.js": "github:julmot/mark.js",
     "mkdirp": "^0.5.1",
     "node-ensure": "^0.0.0",
     "node-sass": "^3.4.2",

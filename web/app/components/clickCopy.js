@@ -13,10 +13,14 @@ define([], function () {
   };
 
   $(document).ready(function(){
-    $(document).on("mouseup", function () {
+    $("#viewer").on("mouseup", function () {
       var x = getSelected();
-      if (x != "") {
-        alert("You selected: " + x)
+
+      var CHECKSTATE = $("#checkSelect").is(":checked");
+      if (CHECKSTATE) {
+          if (x != "") {
+          alert("You selected: " + x)
+        }
       }
     });
   });

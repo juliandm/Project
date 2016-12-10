@@ -4110,7 +4110,7 @@ html[dir='rtl'] #viewerContainer {
   position: relative;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 0;
   cursor: default; }
 
 #toolbarContainer {
@@ -4191,7 +4191,7 @@ html[dir='rtl'] #toolbarContainer, .findbar, .secondaryToolbar {
 .findbar, .secondaryToolbar {
   top: 32px;
   position: absolute;
-  z-index: 10000;
+  z-index: 6000;
   height: 32px;
   min-width: 16px;
   padding: 0px 6px 0px 6px;
@@ -4223,7 +4223,7 @@ html[dir='rtl'] #findInput[data-status="pending"] {
 .secondaryToolbar {
   padding: 6px;
   height: auto;
-  z-index: 30000; }
+  z-index: 400; }
 
 html[dir='ltr'] .secondaryToolbar {
   right: 4px; }
@@ -5021,7 +5021,7 @@ html[dir='rtl'] .outlineItemToggler::before {
   left: 0;
   position: absolute;
   right: 0;
-  z-index: 1000;
+  z-index: 100;
   padding: 3px;
   font-size: 0.8em; }
 
@@ -5052,7 +5052,7 @@ html[dir='rtl'] .outlineItemToggler::before {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 40000; }
+  z-index: 400; }
 
 #overlayContainer > * {
   overflow: auto;
@@ -5237,7 +5237,7 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
   right: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: 50000;
+  z-index: 500;
   /* should be higher than anything else in PDF.js! */ }
 
 @page {
@@ -5532,6 +5532,18 @@ html[dir='rtl'] #documentPropertiesOverlay .row > * {
     display: none; } }
 .sticky {
   width: 100%;
-  z-index: 1000; }
+  z-index: 1; }
+
+.dropdown {
+  z-index: 6000000000;
+  width: 40%;
+  margin: auto;
+  display: inherit;
+  visibility: visible;
+  background: red; }
+  .dropdown > button {
+    display: inherit;
+    visibility: visible;
+    z-index: 19000000000; }
 
 /*# sourceMappingURL=app.css.map */

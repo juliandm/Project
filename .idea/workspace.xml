@@ -2,20 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="189be12c-b877-4c35-ad14-fee51f7e5e27" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/plugins/jquery-easing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/3ea4f1245677f00a532e51bfaf0debe20287bebf/_dropdown.scssc" afterPath="$PROJECT_DIR$/.sass-cache/3ea4f1245677f00a532e51bfaf0debe20287bebf/_dropdown.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/3ea4f1245677f00a532e51bfaf0debe20287bebf/_toolbar.scssc" afterPath="$PROJECT_DIR$/.sass-cache/3ea4f1245677f00a532e51bfaf0debe20287bebf/_toolbar.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/47a18f87c98d92184c778e7bc6427afc0dd40f3d/_viewer.scssc" afterPath="$PROJECT_DIR$/.sass-cache/47a18f87c98d92184c778e7bc6427afc0dd40f3d/_viewer.scssc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/app/styles/components/_grid-container.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/47a18f87c98d92184c778e7bc6427afc0dd40f3d/app.scssc" afterPath="$PROJECT_DIR$/.sass-cache/47a18f87c98d92184c778e7bc6427afc0dd40f3d/app.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/components/dropDown.js" afterPath="$PROJECT_DIR$/web/app/components/dropDown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/components/search.js" afterPath="$PROJECT_DIR$/web/app/components/search.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/public/index.html" afterPath="$PROJECT_DIR$/web/app/public/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/_viewer.scss" afterPath="$PROJECT_DIR$/web/app/styles/_viewer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/app.css" afterPath="$PROJECT_DIR$/web/app/styles/app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/app.css.map" afterPath="$PROJECT_DIR$/web/app/styles/app.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/components/_dropdown.scss" afterPath="$PROJECT_DIR$/web/app/styles/components/_dropdown.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/components/_toolbar.scss" afterPath="$PROJECT_DIR$/web/app/styles/components/_toolbar.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/app/styles/app.scss" afterPath="$PROJECT_DIR$/web/app/styles/app.scss" />
     </list>
     <ignored path="pdf.js.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,21 +41,19 @@
       <file leaf-file-name="dropDown.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/app/components/dropDown.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+            <state relative-caret-position="-252">
+              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-easing.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/plugins/jquery-easing.js">
+      <file leaf-file-name="jquery.mark.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/plugins/jquery.mark.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="899">
-              <caret line="204" column="3" selection-start-line="204" selection-start-column="3" selection-end-line="204" selection-end-column="3" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+            <state relative-caret-position="108">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -69,18 +61,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
+            <state relative-caret-position="-478">
+              <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clickCopy.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/components/clickCopy.js">
+      <file leaf-file-name="_grid-container.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/styles/components/_grid-container.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+            <state relative-caret-position="18">
+              <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/app/styles/app.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -128,16 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/app/styles/base/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_dropdown.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/app/styles/components/_dropdown.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -168,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/app/public/blog-simple.html" />
         <option value="$PROJECT_DIR$/web/app/components/Entrance.jsx" />
         <option value="$PROJECT_DIR$/web/app/Old/viewer.html" />
         <option value="$PROJECT_DIR$/web/app/Old/pdf_viewer.css" />
@@ -211,13 +202,14 @@
         <option value="$PROJECT_DIR$/web/app/components/clickCopy.js" />
         <option value="$PROJECT_DIR$/web/app/components/Search.js" />
         <option value="$PROJECT_DIR$/web/app/application.js" />
-        <option value="$PROJECT_DIR$/web/app/styles/app.scss" />
         <option value="$PROJECT_DIR$/web/app/components/search.js" />
         <option value="$PROJECT_DIR$/web/app/styles/_viewer.scss" />
         <option value="$PROJECT_DIR$/web/app/plugins/jquery-easing.js" />
         <option value="$PROJECT_DIR$/web/app/styles/components/_dropdown.scss" />
         <option value="$PROJECT_DIR$/web/app/styles/components/_toolbar.scss" />
+        <option value="$PROJECT_DIR$/web/app/styles/app.scss" />
         <option value="$PROJECT_DIR$/web/app/public/index.html" />
+        <option value="$PROJECT_DIR$/web/app/styles/components/_grid-container.scss" />
         <option value="$PROJECT_DIR$/web/app/components/dropDown.js" />
       </list>
     </option>
@@ -744,7 +736,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23346613" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43188855" sideWeight="0.49387756" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43188855" sideWeight="0.49387756" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -773,13 +765,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/app/pdfjs-web/pdfjs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/styles/foundation-scss/grid/_row.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -917,13 +902,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/plugins/jquery.mark.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/pdfjs-web/view_history.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1016,14 +994,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1638">
           <caret line="91" column="47" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/app/styles/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1146,18 +1116,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/styles/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="27" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/plugins/jquery.mark.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/app/styles/components/_grid-container.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/app/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="73" column="61" selection-start-line="73" selection-start-column="61" selection-end-line="73" selection-end-column="61" />
+        <state relative-caret-position="-478">
+          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/app/components/dropDown.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="-252">
+          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
           <folding />
         </state>
       </provider>

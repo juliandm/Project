@@ -1,14 +1,13 @@
-.dropdown{
-  z-index: 6000000000;
+#dropdown{
+  z-index: 100;
+  position: absolute;
+  top: 20px;
+  left: 30%;
   width: 40%;
-  margin:auto;
-  display: inherit;
-  visibility: visible;
-  background: red;
+  background: #94b6ff;
+  height: 20em;
+  display: none;
 
-  > button {
-    display: inherit;
-      visibility: visible;
-     z-index: 19000000000;
-  }
 }
+
+

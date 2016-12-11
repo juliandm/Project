@@ -8,28 +8,24 @@ define(["plugins/jquery.mark"], function (markjs) {
 
   var highlightText = function () {
     var text = $("#searchField").val();
-    if(text !== ""){
+    console.log(text);
+    if(text !== "" && text.length > 0){
       $("#viewer").unmark().mark(text, {
         "element": "span",
         "className": "highlight"
       });
+    } else {
+      $("#viewer").unmark();
     }
   };
 
   $("#submitButton").on("click", function () {
     highlightText()
   });
+
   $("#searchField").on("keydown", function (e) {
-    var text = $(this).val();
-    if(e.which === 13) {
+    if(e.which === 13 ) {
       highlightText()
-    } else if(e.which === 8 && text.length <= 1){
-      $("#viewer").unmark()
     }
-  })
-  // .on("input", function () {
-  //   setTimeout(highlightText, 500)
-  // })
-
-
+  });
 });

@@ -5233,8 +5233,10 @@ html {
   height: 20em;
   display: none; }
 
-.gridContainer {
+#gridContainer {
   z-index: 2000;
-  position: absolute; }
+  position: absolute;
+  display: block;
+  top: 5px; }
 
 /*# sourceMappingURL=app.css.map */

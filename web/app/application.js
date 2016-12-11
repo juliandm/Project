@@ -12,7 +12,7 @@ requirejs.config({
 
 
 
-define(["pdfjs-web/app", "components/clickCopy", "components/search", "components/dropDown"], function (app, clickCopy, search, dropDown) {
+define(["pdfjs-web/app", "components/clickCopy", "components/search", "components/dropDown", "components/grid"], function (app, clickCopy, search, dropDown, grid) {
   function getViewerConfiguration() {
     return {
       appContainer: document.body,

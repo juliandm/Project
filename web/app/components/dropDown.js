@@ -4,9 +4,6 @@ define(["foundation"], function (f) {
   var FIXED = false;
   var PREVIOUS = false;
 
-  setInterval(function () {
-    console.log(FIXED)
-  }, 200);
   var animateToggle = function () {
     ANIMATING = true;
     $("#dropdown").animate({
@@ -45,6 +42,8 @@ define(["foundation"], function (f) {
       if (display === "block") {
         animateToggle()
       }
+    } else {
+      PREVIOUS = false;
     }
   })
   .click(function () {

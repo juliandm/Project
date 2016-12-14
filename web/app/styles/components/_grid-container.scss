@@ -1,6 +1,10 @@
 #gridContainer {
-  z-index: 2000;
-  position: absolute;
-  display: block;
-  top: 5px;
+  z-index: 21;
+  margin: 0 0 0 0;
+  height:0;
+  overflow: hidden;
+}
+
+#viewer > div .page {
+  z-index: 20;
 }

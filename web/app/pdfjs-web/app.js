@@ -26,7 +26,7 @@
       'pdfjs-web/pdf_rendering_queue', 'pdfjs-web/pdf_link_service',
       'pdfjs-web/pdf_outline_viewer', 'pdfjs-web/overlay_manager',
       'pdfjs-web/pdf_attachment_viewer', 'pdfjs-web/pdf_find_controller',
-      'pdfjs-web/pdf_find_bar', 'pdfjs-web/dom_events', 'pdfjs-web/pdfjs'],
+      'pdfjs-web/pdf_find_bar', 'pdfjs-web/dom_events', 'pdfjs-web/pdfjs', "components/grid"],
       factory);
   } else if (typeof exports !== 'undefined') {
     factory(exports, require('pdfjs-web/ui_utils.js'), require('pdfjs-web/download_manager.js'),
@@ -39,7 +39,7 @@
       require('pdfjs-web/pdf_link_service.js'), require('pdfjs-web/pdf_outline_viewer.js'),
       require('pdfjs-web/overlay_manager.js'), require('pdfjs-web/pdf_attachment_viewer.js'),
       require('pdfjs-web/pdf_find_controller.js'), require('pdfjs-web/pdf_find_bar.js'),
-      require('pdfjs-web/dom_events.js'), require('pdfjs-web/pdfjs.js'));
+      require('pdfjs-web/dom_events.js'), require('pdfjs-web/pdfjs.js'), require("components/grid"));
   } else {
     factory((root.pdfjsWebApp = {}), root.pdfjsWebUIUtils,
       root.pdfjsWebDownloadManager, root.pdfjsWebPDFHistory,
@@ -60,7 +60,7 @@
                   pdfViewerLib, pdfRenderingQueueLib, pdfLinkServiceLib,
                   pdfOutlineViewerLib, overlayManagerLib,
                   pdfAttachmentViewerLib, pdfFindControllerLib, pdfFindBarLib,
-                  domEventsLib, pdfjsLib) {
+                  domEventsLib, pdfjsLib, grid) {
 
 var DEFAULT_URL = 'compressed.tracemonkey-pldi-09.pdf';
 var UNKNOWN_SCALE = uiUtilsLib.UNKNOWN_SCALE;
@@ -102,6 +102,9 @@ var SCALE_SELECT_PADDING = 22;
 var PAGE_NUMBER_LOADING_INDICATOR = 'visiblePageIsLoading';
 var DISABLE_AUTO_FETCH_LOADING_BAR_TIMEOUT = 5000;
 
+
+
+
 function configure(PDFJS) {
   PDFJS.imageResourcesPath = './images/';
   if (typeof PDFJSDev !== 'undefined' &&
@@ -134,6 +137,8 @@ var DefaultExernalServices = {
     metaKey: true,
   }
 };
+
+
 
 var PDFViewerApplication = {
   initialBookmark: document.location.hash.substring(1),
@@ -398,6 +403,13 @@ var PDFViewerApplication = {
     });
   },
 
+//   callGrid: function () {
+//     $( window ).resize(function() {
+//   clearGrid();
+//   createGrid(20);
+// });
+//   },
+
   run: function pdfViewRun(config) {
     this.initialize(config).then(webViewerInitialized);
   },
@@ -408,8 +420,13 @@ var PDFViewerApplication = {
       newScale = (newScale * DEFAULT_SCALE_DELTA).toFixed(2);
       newScale = Math.ceil(newScale * 10) / 10;
       newScale = Math.min(MAX_SCALE, newScale);
+
     } while (--ticks > 0 && newScale < MAX_SCALE);
     this.pdfViewer.currentScaleValue = newScale;
+    if (newScale < MAX_SCALE) {
+      grid.createGrid(DEFAULT_SCALE_DELTA);
+    }
+
   },
 
   zoomOut: function pdfViewZoomOut(ticks) {
@@ -420,6 +437,9 @@ var PDFViewerApplication = {
       newScale = Math.max(MIN_SCALE, newScale);
     } while (--ticks > 0 && newScale > MIN_SCALE);
     this.pdfViewer.currentScaleValue = newScale;
+    if (newScale > MIN_SCALE) {
+      grid.createGrid(1/DEFAULT_SCALE_DELTA);
+    }
   },
 
   get pagesCount() {

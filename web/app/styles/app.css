@@ -4060,8 +4060,10 @@ html {
     right: 0;
     box-shadow: inset 1px 0 0 rgba(0, 0, 0, 0.25); }
   html #viewerContainer {
+    max-width: 100%;
     z-index: 0;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     position: absolute;
     top: 20px;
@@ -5110,7 +5112,7 @@ html {
       html #sidebarContainer, html #secondaryToolbar, html .toolbar, html #loadingBox, html #errorWrapper, html .textLayer {
         display: none; }
       html #viewerContainer {
-        overflow: visible;
+        overflow: hidden;
         background-color: #404040;
         background-image: url(../../images/texture.png); }
       html #mainContainer, html #viewerContainer, html .page, html .page canvas {
@@ -5123,7 +5125,8 @@ html {
         border: none;
         box-shadow: none;
         background-clip: content-box;
-        background-color: white; }
+        background-color: white;
+        z-index: 101; }
       html .page[data-loaded] {
         display: block; }
       html .fileInput {
@@ -5234,9 +5237,12 @@ html {
   display: none; }
 
 #gridContainer {
-  z-index: 2000;
-  position: absolute;
-  display: block;
-  top: 5px; }
+  z-index: 21;
+  margin: 0 0 0 0;
+  height: 0;
+  overflow: hidden; }
+
+#viewer > div .page {
+  z-index: 20; }
 
 /*# sourceMappingURL=app.css.map */

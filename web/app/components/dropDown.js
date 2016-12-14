@@ -36,7 +36,7 @@ define(["foundation"], function (f) {
     }
 
   });
-  $("#viewer").mouseenter(function () {
+  $("#viewerContainer").mouseenter(function () {
     var display = $("#dropdown").css("display");
     if(!FIXED && !PREVIOUS) {
       if (display === "block") {

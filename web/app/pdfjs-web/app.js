@@ -420,12 +420,13 @@ var PDFViewerApplication = {
       newScale = (newScale * DEFAULT_SCALE_DELTA).toFixed(2);
       newScale = Math.ceil(newScale * 10) / 10;
       newScale = Math.min(MAX_SCALE, newScale);
-
+      // console.log(newScale);
+      // console.log("Height " + $('#pageContainer1').height());
     } while (--ticks > 0 && newScale < MAX_SCALE);
     this.pdfViewer.currentScaleValue = newScale;
-    if (newScale < MAX_SCALE) {
-      grid.createGrid(DEFAULT_SCALE_DELTA);
-    }
+    // if (newScale < MAX_SCALE) {
+    //   grid.setValues(DEFAULT_SCALE_DELTA);
+    // }
 
   },
 
@@ -435,11 +436,14 @@ var PDFViewerApplication = {
       newScale = (newScale / DEFAULT_SCALE_DELTA).toFixed(2);
       newScale = Math.floor(newScale * 10) / 10;
       newScale = Math.max(MIN_SCALE, newScale);
+      // console.log(newScale);
+      // console.log("Height " + $('#pageContainer1').height());
+
     } while (--ticks > 0 && newScale > MIN_SCALE);
     this.pdfViewer.currentScaleValue = newScale;
-    if (newScale > MIN_SCALE) {
-      grid.createGrid(1/DEFAULT_SCALE_DELTA);
-    }
+    // if (newScale > MIN_SCALE) {
+    //   grid.setValues(1/DEFAULT_SCALE_DELTA);;
+    // }
   },
 
   get pagesCount() {

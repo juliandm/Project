@@ -365,8 +365,7 @@ th {
   font-family: "small=0em&medium=40em&large=64em&xlarge=75em&xxlarge=90em"; }
 
 html {
-  font-size: 100%;
-  box-sizing: border-box; }
+  font-size: 100%; }
 
 *,
 *::before,
@@ -3767,10 +3766,7 @@ table.hover tbody tr:nth-of-type(even):hover {
  * limitations under the License.
  */
 .pdfViewer {
-  box-sizing: content-box; }
-
-.pdfViewer .canvasWrapper {
-  overflow: hidden; }
+  display: block; }
 
 .pdfViewer .page {
   direction: ltr;
@@ -4027,6 +4023,7 @@ html {
   html html[dir='rtl'] #outerContainer.sidebarOpen > #sidebarContainer {
     right: 0px; }
   html #mainContainer {
+    overflow: hidden;
     position: absolute;
     top: 0;
     right: 0;
@@ -5226,6 +5223,20 @@ html {
   height: 20px;
   text-align: center; }
 
+#sliderContainer {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  text-align: center;
+  background: #777986;
+  z-index: 1000; }
+  #sliderContainer > div:first-child {
+    height: 18px; }
+
+#slider {
+  height: 81px; }
+
 #dropdown {
   z-index: 100;
   position: absolute;
@@ -5242,7 +5253,11 @@ html {
   height: 0;
   overflow: hidden; }
 
-#viewer > div .page {
-  z-index: 20; }
+#gridContainer > div {
+  z-index: 20;
+  display: none; }
+
+.gridVisible {
+  display: block; }
 
 /*# sourceMappingURL=app.css.map */

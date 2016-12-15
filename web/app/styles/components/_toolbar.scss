@@ -5,6 +5,26 @@
 
 }
 
+#sliderContainer {
+  position: absolute;
+  width:100%;
+  height: 100px;
+  bottom:0;
+  text-align: center;
+  background: #777986;
+  z-index: 1000;
+
+  > div:first-child {
+    height: 18px;
+  }
+
+}
+
+
+#slider {
+  height: 81px;
+}
+
 #dropdown-button {
 
 }

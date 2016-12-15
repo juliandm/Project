@@ -3,8 +3,14 @@
   margin: 0 0 0 0;
   height:0;
   overflow: hidden;
+  //width: 2000px;
 }
 
-#viewer > div .page {
+#gridContainer > div {
   z-index: 20;
+  display: none;
+}
+
+.gridVisible {
+  display: block;
 }

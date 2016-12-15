@@ -13,7 +13,7 @@ define([], function () {
   };
 
   $(document).ready(function(){
-    $("#viewer").on("mouseup", function () {
+    $("#viewer").on("mouseup", function (e) {
       var x = getSelected();
 
       var CHECKSTATE = $("#checkSelect").is(":checked");

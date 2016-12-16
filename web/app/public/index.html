@@ -12,10 +12,9 @@
 
 
 
+
     <script data-main="../application.js" src="../../../node_modules/requirejs/require.js"></script>
 <!--#endif-->
-
-
 
     <link rel="stylesheet" href="../styles/app.css">
 <!--#if !PRODUCTION-->
@@ -87,13 +86,21 @@
     </div><!--ViewerContainer-->
 
     <div id="sliderContainer">
-        <div>
-          <button id="toggleSlider" type="button"> &raquo </button>
-        </div>
-        <div id="slider">
           <div>
-            <p> Hello</p>
+            <button id="toggleSlider" type="button"> &raquo </button>
           </div>
+        <div id="slider">
+
+            <div class="owl-carousel owl-theme sliderIcons">
+              <div> 1 </div>
+              <div> 2 </div>
+              <div> 3 </div>
+              <div> 4 </div>
+              <div> 5 </div>
+              <div> 6 </div>
+              <div> 6 </div>
+            </div>
+
         </div>
 
 
@@ -102,10 +109,14 @@
 </div>
 
     <script src="../plugins/jquery.js"></script>
-    <script src="../plugins/jquery-easing.js"></script>
-    <script src="../foundation.js"></script>
+      <!--<script src="../plugins/jquery.mousewheel.js"></script>-->
+    <!--<script src="../plugins/jquery-easing.js"></script>-->
+    <!--<script src="../plugins/owl.carousel.js"></script>-->
+
+    <!--<script src="../foundation.js"></script>-->
     <script>
-      $(document).foundation();
+
+
     </script>
   </body>
 </html>

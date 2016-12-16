@@ -6,14 +6,27 @@ requirejs.config({
     "pdfjs-web": "pdfjs-web",
     "pdfjs-dist": "../..",
     "pdfjs": "../../src", //src
-  }
+  },
+  // shim: {
+  //     foo: {
+  //         deps: ['jquery'],
+  //         exports: 'Foo'
+  //     },
+  //     bar: {
+  //         deps: ['jquery']
+  //     }
+  // }
 });
 
 
 
 
 
-define(["pdfjs-web/app", "components/clickCopy", "components/search", "components/dropDown", "components/grid"], function (app, clickCopy, search, dropDown, grid) {
+define(["plugins/jquery-easing","plugins/owl.carousel", "plugins/jquery.mousewheel", "plugins/foundation",
+  "pdfjs-web/app", "components/clickCopy", "components/search", "components/dropDown", "components/grid" ],
+  function (easing, carousel, mousewheel,foundation, app, clickCopy, search, dropDown, grid) {
+
+    $(document).foundation();
   function getViewerConfiguration() {
     return {
       appContainer: document.body,

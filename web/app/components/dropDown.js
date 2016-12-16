@@ -2,45 +2,43 @@ define(["exports"], function (exports) {
 
   var ANIMATING = false;
   var FIXED = false;
-  var PREVIOUS = false;
-  $("#toggleSlider").on("click", animateToggleSlider)
+  var PREVIOUS_FIXED = false;
+  var PREVIOUS_FREE = false;
+
+
+
 
   function animateToggleDropdown() {
-    ANIMATING = true;
-    $("#dropdown").animate({
-      height: "toggle",
-    },500,"easeInOutCubic", function () {
-      ANIMATING = false;
-    })
+
+      ANIMATING = true;
+      $("#dropdown").animate({
+        height: "toggle",
+      },500,"easeInOutCubic", function () {
+        ANIMATING = false;
+      })
+
   };
 
-  function animateToggleSlider () {
-    console.log("Click")
-    ANIMATING = true;
-    var height = $("#sliderContainer").height();
-    if (height > 18){
-      height = 18;
-    } else if (height < 100) {
-      height = 100;
-    }
-    $("#sliderContainer").animate({
-      height: height,
-    },500,"easeInOutCubic", function () {
-      ANIMATING = false;
-    })
-  };
+
 
   //mouseenter
   $("#toggleDropdown").mouseenter(function () {
+        console.log("toggledropdown")
     var display = $("#dropdown").css("display");
     if (display !== "block" && !FIXED && !ANIMATING) {
       animateToggleDropdown()
     }
   })
   .on("click dblclick",function () {
+    if(!$("#toggleDropdown").hasClass("fixedToggleButton")) {
+      $("#toggleDropdown").addClass("fixedToggleButton");
+    } else {
+      $("#toggleDropdown").removeClass("fixedToggleButton");
+    }
+
     var display = $("#dropdown").css("display");
     if (display === "block" && FIXED && !ANIMATING) {
-      PREVIOUS = true;
+      PREVIOUS_FIXED = true;
       animateToggleDropdown();
       FIXED = !FIXED;
     } else if (display === "block" && !FIXED && !ANIMATING) {
@@ -53,17 +51,21 @@ define(["exports"], function (exports) {
     }
 
   });
-  $("#viewerContainer").mouseenter(function () {
+  $("#dropdown").mouseleave(function () {
+    console.log("dropdown")
     var display = $("#dropdown").css("display");
-    if(!FIXED && !PREVIOUS) {
+    if(!FIXED && !PREVIOUS_FIXED) {
       if (display === "block") {
         animateToggleDropdown()
       }
     } else {
-      PREVIOUS = false;
+      PREVIOUS_FIXED = false;
     }
-  })
-  .click(function () {
+  });
+  $("#viewerContainer").click(function () {
+    if($("#toggleDropdown").hasClass("fixedToggleButton")) {
+      $("#toggleDropdown").removeClass("fixedToggleButton");
+    }
     var display = $("#dropdown").css("display");
     if (display === "block" && FIXED && !ANIMATING) {
       animateToggleDropdown()
@@ -71,7 +73,15 @@ define(["exports"], function (exports) {
     }
   });
 
+  $("body").mouseleave(function () {
+        console.log("window")
+    var display = $("#dropdown").css("display");
 
+      if (display === "block" && !ANIMATING) {
+        animateToggleDropdown()
+      }
+
+  })
 
 
 

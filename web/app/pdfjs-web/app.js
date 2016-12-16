@@ -71,7 +71,7 @@ var noContextMenuHandler = uiUtilsLib.noContextMenuHandler;
 var mozL10n = uiUtilsLib.mozL10n;
 var parseQueryString = uiUtilsLib.parseQueryString;
 var PDFHistory = pdfHistoryLib.PDFHistory;
-var Preferences = preferencesLib.Preferences;
+// var Preferences = preferencesLib.Preferences;
 // var SidebarView = pdfSidebarLib.SidebarView;
 // var PDFSidebar = pdfSidebarLib.PDFSidebar;
 var ViewHistory = viewHistoryLib.ViewHistory;
@@ -233,8 +233,8 @@ var PDFViewerApplication = {
     // });
     pdfRenderingQueue.setThumbnailViewer(this.pdfThumbnailViewer);
 
-    Preferences.initialize();
-    this.preferences = Preferences;
+    // Preferences.initialize();
+    // this.preferences = Preferences;
 
     this.pdfHistory = new PDFHistory({
       linkService: pdfLinkService,
@@ -317,78 +317,78 @@ var PDFViewerApplication = {
     var self = this;
     var PDFJS = pdfjsLib.PDFJS;
     var initializedPromise = Promise.all([
-      Preferences.get('enableWebGL').then(function resolved(value) {
-        PDFJS.disableWebGL = !value;
-      }),
-      Preferences.get('sidebarViewOnLoad').then(function resolved(value) {
-        self.preferenceSidebarViewOnLoad = value;
-      }),
-      Preferences.get('pdfBugEnabled').then(function resolved(value) {
-        self.preferencePdfBugEnabled = value;
-      }),
-      Preferences.get('showPreviousViewOnLoad').then(function resolved(value) {
-        self.preferenceShowPreviousViewOnLoad = value;
-      }),
-      Preferences.get('defaultZoomValue').then(function resolved(value) {
-        self.preferenceDefaultZoomValue = value;
-      }),
-      Preferences.get('enhanceTextSelection').then(function resolved(value) {
-        // TODO: Move the initialization and fetching of `Preferences` to occur
-        //       before the various viewer components are initialized.
-        //
-        // This was attempted in: https://github.com/mozilla/pdf.js/pull/7586,
-        // but it had to be backed out since it violated implicit assumptions
-        // about some viewer components being synchronously available.
-        //
-        // NOTE: This hack works since the `enhanceTextSelection` option is not
-        //       needed until `PDFViewer.setDocument` has been called.
-        self.pdfViewer.enhanceTextSelection = value;
-      }),
-      Preferences.get('disableTextLayer').then(function resolved(value) {
-        if (PDFJS.disableTextLayer === true) {
-          return;
-        }
-        PDFJS.disableTextLayer = value;
-      }),
-      Preferences.get('disableRange').then(function resolved(value) {
-        if (PDFJS.disableRange === true) {
-          return;
-        }
-        PDFJS.disableRange = value;
-      }),
-      Preferences.get('disableStream').then(function resolved(value) {
-        if (PDFJS.disableStream === true) {
-          return;
-        }
-        PDFJS.disableStream = value;
-      }),
-      Preferences.get('disableAutoFetch').then(function resolved(value) {
-        PDFJS.disableAutoFetch = value;
-      }),
-      Preferences.get('disableFontFace').then(function resolved(value) {
-        if (PDFJS.disableFontFace === true) {
-          return;
-        }
-        PDFJS.disableFontFace = value;
-      }),
-      Preferences.get('useOnlyCssZoom').then(function resolved(value) {
-        PDFJS.useOnlyCssZoom = value;
-      }),
-      Preferences.get('externalLinkTarget').then(function resolved(value) {
-        if (PDFJS.isExternalLinkTargetSet()) {
-          return;
-        }
-        PDFJS.externalLinkTarget = value;
-      }),
-      Preferences.get('renderInteractiveForms').then(function resolved(value) {
-        // TODO: Like the `enhanceTextSelection` preference, move the
-        //       initialization and fetching of `Preferences` to occur
-        //       before the various viewer components are initialized.
-        self.pdfViewer.renderInteractiveForms = value;
-      }),
-      Preferences.get('disablePageLabels').then(function resolved(value) {
-        self.preferenceDisablePageLabels = value;
-      }),
+      // Preferences.get('enableWebGL').then(function resolved(value) {
+      //   PDFJS.disableWebGL = !value;
+      // }),
+      // Preferences.get('sidebarViewOnLoad').then(function resolved(value) {
+      //   self.preferenceSidebarViewOnLoad = value;
+      // }),
+      // Preferences.get('pdfBugEnabled').then(function resolved(value) {
+      //   self.preferencePdfBugEnabled = value;
+      // }),
+      // Preferences.get('showPreviousViewOnLoad').then(function resolved(value) {
+      //   self.preferenceShowPreviousViewOnLoad = value;
+      // }),
+      // Preferences.get('defaultZoomValue').then(function resolved(value) {
+      //   self.preferenceDefaultZoomValue = value;
+      // }),
+      // Preferences.get('enhanceTextSelection').then(function resolved(value) {
+      //   // TODO: Move the initialization and fetching of `Preferences` to occur
+      //   //       before the various viewer components are initialized.
+      //   //
+      //   // This was attempted in: https://github.com/mozilla/pdf.js/pull/7586,
+      //   // but it had to be backed out since it violated implicit assumptions
+      //   // about some viewer components being synchronously available.
+      //   //
+      //   // NOTE: This hack works since the `enhanceTextSelection` option is not
+      //   //       needed until `PDFViewer.setDocument` has been called.
+      //   self.pdfViewer.enhanceTextSelection = value;
+      // }),
+      // Preferences.get('disableTextLayer').then(function resolved(value) {
+      //   if (PDFJS.disableTextLayer === true) {
+      //     return;
+      //   }
+      //   PDFJS.disableTextLayer = value;
+      // }),
+      // Preferences.get('disableRange').then(function resolved(value) {
+      //   if (PDFJS.disableRange === true) {
+      //     return;
+      //   }
+      //   PDFJS.disableRange = value;
+      // }),
+      // Preferences.get('disableStream').then(function resolved(value) {
+      //   if (PDFJS.disableStream === true) {
+      //     return;
+      //   }
+      //   PDFJS.disableStream = value;
+      // }),
+      // Preferences.get('disableAutoFetch').then(function resolved(value) {
+      //   PDFJS.disableAutoFetch = value;
+      // }),
+      // Preferences.get('disableFontFace').then(function resolved(value) {
+      //   if (PDFJS.disableFontFace === true) {
+      //     return;
+      //   }
+      //   PDFJS.disableFontFace = value;
+      // }),
+      // Preferences.get('useOnlyCssZoom').then(function resolved(value) {
+      //   PDFJS.useOnlyCssZoom = value;
+      // }),
+      // Preferences.get('externalLinkTarget').then(function resolved(value) {
+      //   if (PDFJS.isExternalLinkTargetSet()) {
+      //     return;
+      //   }
+      //   PDFJS.externalLinkTarget = value;
+      // }),
+      // Preferences.get('renderInteractiveForms').then(function resolved(value) {
+      //   // TODO: Like the `enhanceTextSelection` preference, move the
+      //   //       initialization and fetching of `Preferences` to occur
+      //   //       before the various viewer components are initialized.
+      //   self.pdfViewer.renderInteractiveForms = value;
+      // }),
+      // Preferences.get('disablePageLabels').then(function resolved(value) {
+      //   self.preferenceDisablePageLabels = value;
+      // }),
       // TODO move more preferences and other async stuff here
     ]).catch(function (reason) { });
 

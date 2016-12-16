@@ -1,4 +1,4 @@
-define([], function () {
+define(["components/slider"], function (slider) {
 
   var getSelected = function(){
     var t = '';
@@ -9,17 +9,19 @@ define([], function () {
     }else if(document.selection){
       t = document.selection.createRange().text;
     }
+    t = t.toString();
     return t;
   };
 
   $(document).ready(function(){
     $("#viewer").on("mouseup", function (e) {
-      var x = getSelected();
+      var text = getSelected();
 
       var CHECKSTATE = $("#checkSelect").is(":checked");
       if (CHECKSTATE) {
-          if (x != "") {
-          alert("You selected: " + x)
+          if (text != "") {
+            slider.toggleSlider(true, false);
+            slider.showIcons(text);
         }
       }
     });

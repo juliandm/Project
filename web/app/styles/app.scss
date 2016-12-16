@@ -15,7 +15,10 @@
 @import "components/toolbar";
 @import "components/dropdown";
 @import "components/grid-container";
+@import "components/slider";
 
+//plugins
+@import "owl.carousel";
 
 //sass ./web/app/styles/app.scss ./web/app/styles/app.css
 //sass --watch ./web/app/styles/

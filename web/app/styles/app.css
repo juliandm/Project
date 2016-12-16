@@ -11,6 +11,7 @@
  * 2. Prevent iOS and IE text size adjust after device orientation change,
  *    without disabling user zoom.
  */
+@import url(font-awesome/css/font-awesome.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -5248,9 +5249,6 @@ html {
 
 .gridVisible {
   display: block; }
-
-.sliderIcons > div {
-  background-color: #0c4d78; }
 
 #sliderContainer {
   position: absolute;

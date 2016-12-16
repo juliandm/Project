@@ -22,9 +22,10 @@ requirejs.config({
 
 
 
-define(["plugins/jquery-easing","plugins/owl.carousel", "plugins/jquery.mousewheel", "plugins/foundation",
+define(["plugins/owl.carousel", "plugins/jquery-easing", "plugins/jquery.mousewheel", "plugins/foundation",
   "pdfjs-web/app", "components/clickCopy", "components/search", "components/dropDown", "components/grid" ],
-  function (easing, carousel, mousewheel,foundation, app, clickCopy, search, dropDown, grid) {
+  function (owl, easing, mousewheel,foundation, app, clickCopy, search, dropDown, grid) {
+
 
     $(document).foundation();
   function getViewerConfiguration() {

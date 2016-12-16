@@ -21,7 +21,9 @@ define(["components/slider"], function (slider) {
       if (CHECKSTATE) {
           if (text != "") {
             slider.toggleSlider(true, false);
-            slider.showIcons(text);
+            slider.iconSlider.searchIcons(text);
+            console.log("YEAY")
+
         }
       }
     });

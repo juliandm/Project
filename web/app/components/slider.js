@@ -7,13 +7,13 @@ define(["exports"], function (exports) {
       var that = this;
 
 
+      if (text.includes(" ")){
+        textArray = text.split(" ")
 
-    //sets result Array
-    if (text.includes(" ")){
-      textArray = text.split(" ",5)
-    }
+      }
 
-      $.getJSON("../data/icons.json").done(function(icons) {
+      if (text.length >= 4 && textArray.length < 6) {
+        $.getJSON("../data/icons.json").done(function(icons) {
 
         var iconsArray = icons.icons;
 
@@ -39,9 +39,18 @@ define(["exports"], function (exports) {
 
         that.names = duplicateArray.filter(function(item, pos, self) {
           return self.indexOf(item) == pos;
-        })
+        });
         that.appendToCarousel();
       });
+      } else if (text.length < 4) {
+        $("#carousel").empty().html("<p> String too short! </p>");
+      } else {
+        $("#carousel").empty().html("<p> String too long! </p>");
+      }
+
+
+
+
     },
     appendToCarousel: function () {
       console.log("läuft");

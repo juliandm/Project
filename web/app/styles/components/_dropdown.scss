@@ -1,13 +1,14 @@
 #dropdown{
   z-index: 100;
   position: absolute;
-  top: 20px;
+  bottom: 0;
   left: 30%;
   width: 40%;
   background: #94b6ff;
-  height: 20em;
+  height: 10em;
   display: none;
-
+  padding: 1em;
+  box-shadow: 2px 2px 5px 1px black;
 }
 
 

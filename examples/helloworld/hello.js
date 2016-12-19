@@ -4,7 +4,7 @@
 require.config({paths: {'pdfjs': '../../src'}});
 require(['pdfjs/display/api', 'pdfjs/display/global'], function (api, global) {
   // In production, change this to point to the built `pdf.worker.js` file.
-  global.PDFJS.workerSrc = '../../src/worker_loader.js';
+  global.PDFJS.workerSrc = '../PDFJS.getDocument(url).t../src/worker_loader.js';
 
   // Fetch the PDF document from the URL using promises.
   api.getDocument('helloworld.pdf').then(function (pdf) {

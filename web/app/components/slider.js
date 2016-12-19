@@ -2,13 +2,23 @@ define(["exports"], function (exports) {
 
   var iconSlider = {
     names: [],
+    text: "",
     searchIcons: function (text) {
       var textArray = [];
+      this.text = text;
+
       var that = this;
 
 
       if (text.includes(" ")){
         textArray = text.split(" ")
+        textArray = textArray.filter(function (el) {
+          var result = false
+          if (el !== (" " || "  " || "   ") && el >= 4) {
+            result = true;
+          }
+          return result;
+        })
 
       }
 
@@ -23,12 +33,13 @@ define(["exports"], function (exports) {
             // console.log("Simple", element, text);
             // console.log(element.includes(text));
             return element.includes(text);
+
           } else {
 
             var INCLUDED = false;
             textArray.forEach(function (value) {
-              // console.log("Array", element, value)
-              // console.log(element.includes(value));
+              console.log("Array", element, value)
+              console.log(element.includes(value));
               if (element.includes(value)){
                 INCLUDED = true;
               }
@@ -43,9 +54,12 @@ define(["exports"], function (exports) {
         that.appendToCarousel();
       });
       } else if (text.length < 4) {
-        $("#carousel").empty().html("<p> String too short! </p>");
+        $("#carousel").empty().html("<p> Marked text: '" + text + "'  too short! </p>");
       } else {
-        $("#carousel").empty().html("<p> String too long! </p>");
+        text = text.split(" ", 5);
+        text = text.join(" ");
+        text = text + "...";
+        $("#carousel").empty().html("<p> Marked text '" + text + "' too long! </p>");
       }
 
 
@@ -53,7 +67,10 @@ define(["exports"], function (exports) {
 
     },
     appendToCarousel: function () {
-      console.log("läuft");
+        var text = this.text.split(" ", 5);
+        text = text.join(" ");
+        text = text + "...";
+
       if(this.names.length > 0) {
         $("#carousel").empty();
         this.names.forEach(function (el) {
@@ -61,29 +78,43 @@ define(["exports"], function (exports) {
         });
         startCarousel();
       } else {
-        $("#carousel").empty().html("<p> No Icons found! </p>");
+        $("#carousel").empty().html("<p> No icons for text:'" + text + "' found! </p>");
       }
     }
   };
 
+  function grabIcon() {
+     $("#slider").click(function(evt){
+      var clicked = evt.target;
+      var currentID = clicked.id || "No ID!";
+     $(clicked).html(currentID);
+    })
+  }
 
 
   function animateToggleSlider (show, hide) {
     ANIMATING = true;
     var height = $("#sliderContainer").height();
+    var display = "block"
 
     if (height > 23 && !show){
-      height = 22;
+      height = 20;
       $("#sliderContainer div:first-child button").removeClass("upside fixedToggleButton");
+      display = "none";
+
     } else if (height < 100 && !hide) {
       height = 100;
       $("#sliderContainer div:first-child button").addClass("upside fixedToggleButton");
     }
+
+
     $("#sliderContainer").animate({
       height: height,
     },500,"easeInOutCubic", function () {
       ANIMATING = false;
     })
+    $(".owl-carousel").css("display", display);
+
   };
 
 

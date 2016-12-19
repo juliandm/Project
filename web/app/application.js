@@ -22,9 +22,9 @@ requirejs.config({
 
 
 
-define(["plugins/owl.carousel", "plugins/jquery-easing", "plugins/jquery.mousewheel", "plugins/foundation",
+define(["api/thesaurus", "plugins/owl.carousel", "plugins/jquery-easing", "plugins/jquery.mousewheel", "plugins/foundation",
   "pdfjs-web/app", "components/clickCopy", "components/search", "components/dropDown", "components/grid" ],
-  function (owl, easing, mousewheel,foundation, app, clickCopy, search, dropDown, grid) {
+  function (api_the, owl, easing, mousewheel,foundation, app, clickCopy, search, dropDown, grid) {
 
 
     $(document).foundation();

@@ -13,7 +13,8 @@ define(["exports"], function (exports) {
       ANIMATING = true;
       $("#dropdown").animate({
         height: "toggle",
-      },500,"easeInOutCubic", function () {
+        padding: "toggle",
+      },700,"easeInOutCubic", function () {
         ANIMATING = false;
       })
 

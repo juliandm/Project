@@ -17,8 +17,10 @@
 
 'use strict';
 
+
 var fs = require('fs');
 var gulp = require('gulp');
+var sass = require('gulp-sass');
 var gutil = require('gulp-util');
 var mkdirp = require('mkdirp');
 var rimraf = require('rimraf');
@@ -332,6 +334,21 @@ function createTestSource(testsName) {
   };
   return source;
 }
+
+
+
+
+
+gulp.task('sass', function () {
+  return gulp.src('./web/app/styles/app.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('./web/app/styles'));
+});
+
+gulp.task('sasswatch', function () {
+  gulp.watch('./web/app/styles/**/*.scss', ['sass']);
+});
+
 
 gulp.task('default', function() {
   console.log('Available tasks:');

@@ -1,33 +1,30 @@
-//.sliderIcons > div {
-//  background-color: #0c4d78;
-//  height: 60px;
-//
-//  line-height: 60px;
-//
-//  text-align: center;
-//
-//  > p {
-//    display: inline-block;
-//    vertical-align: middle;
-//    line-height: normal;
-//  }
-//}
+.owl-carousel  {
+  background-color: #0c4d78;
+   > div > p {
+    display: none;
+    vertical-align: middle;
+    line-height: normal;
+  }
+}
 
-#sliderContainer {
+#sliderContainer{
   position: absolute;
   width:100%;
-  height: 22px;
-  bottom:0;
+  height: 0;
+  top:0;
   text-align: center;
   background: #777986;
   z-index: 1000;
+  //opacity: 0.6;
 
-
-  > div:first-child {
-    height: 22px;
+  &:hover {
+    //opacity: 1;
   }
+  //> div {
+  //  height: 22px;
+  //}
 
-  > div:first-child > button {
+  > button {
     -webkit-transform: rotate(-90deg);
     -moz-transform: rotate(-90deg);
     -o-transform: rotate(-90deg);
@@ -37,7 +34,7 @@
     font-size: 1.5em;
   }
 
-  > div:first-child > button.upside {
+  > button.upside {
     -webkit-transform: rotate(-270deg);
     -moz-transform: rotate(-270deg);
     -o-transform: rotate(-270deg);

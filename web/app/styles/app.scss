@@ -2,7 +2,7 @@
 @import "base/foundation-settings";
 
 // foundation
-@import "foundation-scss/foundation";
+@import "foundation-scss/foundation.scss";
 @include foundation-everything;
 
 //PDFJS
@@ -18,9 +18,9 @@
 @import "components/slider";
 
 //plugins
-@import "owl.carousel";
+@import "owl.carousel.scss";
 //@import "font-awesome/scss/font-awesome";
 @import "font-awesome/css/font-awesome.css";
-
+//
 //sass ./web/app/styles/app.scss ./web/app/styles/app.css
 //sass --watch ./web/app/styles/
